@@ -1,6 +1,6 @@
 import Foundation
 
-class Aplication {
+class Application {
     var currentUser : User
     var locations : [Location ]
 }
