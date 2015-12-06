@@ -5,12 +5,14 @@ class QuestionQueue {
     
     var groupsQueue : [Group ] = []
     
-    func addGroup() {
-        
+    func addGroup(Group group) {
+       groupsQueue.append(group)
     }
     
-    func removeGroup()  {
-        
+    func removeGroup(Group group)  {
+        if(groupsQueue.indexOf(group)!=nil){
+            groupsQueue.removeAtIndex(groupsQueue.indexOf(group)!)
+        }
     }
     
     
