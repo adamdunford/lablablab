@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		35DE9DA51C107B0F0022DDAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */; };
 		35DE9DA71C107B0F0022DDAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DA61C107B0F0022DDAB /* ViewController.swift */; };
-		35DE9DAA1C107B0F0022DDAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DA81C107B0F0022DDAB /* Main.storyboard */; };
+		35DE9DAA1C107B0F0022DDAB /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DA81C107B0F0022DDAB /* Teacher.storyboard */; };
 		35DE9DAD1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DAB1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld */; };
 		35DE9DAF1C107B0F0022DDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */; };
 		35DE9DB21C107B0F0022DDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */; };
 		35DE9DBD1C107B0F0022DDAB /* Lablablab_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */; };
+		35FAB5351C15815D005B6C52 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FAB5341C15815D005B6C52 /* CloudKit.framework */; };
+		35FAB5381C158A92005B6C52 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FAB5361C158A92005B6C52 /* Student.storyboard */; };
 		7007D0891C1083EB00969FA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0881C1083EB00969FA9 /* User.swift */; };
 		7007D08B1C10840200969FA9 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08A1C10840200969FA9 /* Lab.swift */; };
 		7007D08D1C10852A00969FA9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08C1C10852A00969FA9 /* Group.swift */; };
@@ -37,7 +39,7 @@
 		35DE9DA11C107B0F0022DDAB /* Lablablab 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lablablab 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35DE9DA61C107B0F0022DDAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35DE9DA91C107B0F0022DDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35DE9DA91C107B0F0022DDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Teacher.storyboard; sourceTree = "<group>"; };
 		35DE9DAC1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lablablab_1_0.xcdatamodel; sourceTree = "<group>"; };
 		35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35DE9DB11C107B0F0022DDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,9 @@
 		35DE9DB81C107B0F0022DDAB /* Lablablab 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lablablab 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lablablab_1_0Tests.swift; sourceTree = "<group>"; };
 		35DE9DBE1C107B0F0022DDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FAB5331C158156005B6C52 /* Lablablab 1.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Lablablab 1.0.entitlements"; sourceTree = "<group>"; };
+		35FAB5341C15815D005B6C52 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		35FAB5371C158A92005B6C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Student.storyboard; sourceTree = "<group>"; };
 		7007D0881C1083EB00969FA9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7007D08A1C10840200969FA9 /* Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
 		7007D08C1C10852A00969FA9 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -100,7 +105,8 @@
 				7007D0871C10839300969FA9 /* DataTypes */,
 				35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */,
 				35DE9DA61C107B0F0022DDAB /* ViewController.swift */,
-				35DE9DA81C107B0F0022DDAB /* Main.storyboard */,
+				35DE9DA81C107B0F0022DDAB /* Teacher.storyboard */,
+				35FAB5361C158A92005B6C52 /* Student.storyboard */,
 				35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */,
 				35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */,
 				35DE9DB31C107B0F0022DDAB /* Info.plist */,
@@ -218,9 +224,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FAB5381C158A92005B6C52 /* Student.storyboard in Resources */,
 				35DE9DB21C107B0F0022DDAB /* LaunchScreen.storyboard in Resources */,
 				35DE9DAF1C107B0F0022DDAB /* Assets.xcassets in Resources */,
-				35DE9DAA1C107B0F0022DDAB /* Main.storyboard in Resources */,
+				35DE9DAA1C107B0F0022DDAB /* Teacher.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +276,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		35DE9DA81C107B0F0022DDAB /* Main.storyboard */ = {
+		35DE9DA81C107B0F0022DDAB /* Teacher.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				35DE9DA91C107B0F0022DDAB /* Base */,
 			);
-			name = Main.storyboard;
+			name = Teacher.storyboard;
 			sourceTree = "<group>";
 		};
 		35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */ = {
@@ -283,6 +290,14 @@
 				35DE9DB11C107B0F0022DDAB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35FAB5361C158A92005B6C52 /* Student.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FAB5371C158A92005B6C52 /* Base */,
+			);
+			name = Student.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
