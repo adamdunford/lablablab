@@ -10,6 +10,6 @@ class Group:Equatable {
     }    
 }
 
-func ==(group1: Group, group2: Group) -> Group{
+func ==(group1: Group, group2: Group) -> Bool{
     return group1.number==group2.number;
 }
