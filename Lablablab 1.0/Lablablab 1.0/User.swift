@@ -5,7 +5,7 @@ class User {
     var lastName : String
     var isInstructor : Bool
     
-    var labs : [Lab ]
+    var labs : [Lab ] = []
     
     init (name : String, lastName : String, isInstructor : Bool) {
         self.name = name

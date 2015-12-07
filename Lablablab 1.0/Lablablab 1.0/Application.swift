@@ -2,10 +2,10 @@ import Foundation
 
 class Application {
     var currentUser : User
-    var locations : [Location]
+    var locations : [Location] = []
 
-    func init(user : User, locations : [Location]) {
-       self.currentUser=user
+    init(currentUser : User, locations : [Location]) {
+       self.currentUser=currentUser
        self.locations=locations
     }
 }
