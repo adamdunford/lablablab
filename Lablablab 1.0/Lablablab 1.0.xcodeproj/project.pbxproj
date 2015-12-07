@@ -14,6 +14,12 @@
 		35DE9DAF1C107B0F0022DDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */; };
 		35DE9DB21C107B0F0022DDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */; };
 		35DE9DBD1C107B0F0022DDAB /* Lablablab_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */; };
+		7007D0891C1083EB00969FA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0881C1083EB00969FA9 /* User.swift */; };
+		7007D08B1C10840200969FA9 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08A1C10840200969FA9 /* Lab.swift */; };
+		7007D08D1C10852A00969FA9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08C1C10852A00969FA9 /* Group.swift */; };
+		7007D0901C10854300969FA9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08F1C10854300969FA9 /* Location.swift */; };
+		7007D0941C108A1200969FA9 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0931C108A1200969FA9 /* QuestionQueue.swift */; };
+		7007D0961C108BE900969FA9 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0951C108BE900969FA9 /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		35DE9DB81C107B0F0022DDAB /* Lablablab 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lablablab 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lablablab_1_0Tests.swift; sourceTree = "<group>"; };
 		35DE9DBE1C107B0F0022DDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7007D0881C1083EB00969FA9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7007D08A1C10840200969FA9 /* Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		7007D08C1C10852A00969FA9 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		7007D08F1C10854300969FA9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7007D0931C108A1200969FA9 /* QuestionQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionQueue.swift; sourceTree = "<group>"; };
+		7007D0951C108BE900969FA9 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		35DE9DA31C107B0F0022DDAB /* Lablablab 1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				7007D0871C10839300969FA9 /* DataTypes */,
 				35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */,
 				35DE9DA61C107B0F0022DDAB /* ViewController.swift */,
 				35DE9DA81C107B0F0022DDAB /* Main.storyboard */,
@@ -97,6 +110,19 @@
 				35DE9DBE1C107B0F0022DDAB /* Info.plist */,
 			);
 			path = "Lablablab 1.0Tests";
+			sourceTree = "<group>";
+		};
+		7007D0871C10839300969FA9 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				7007D0881C1083EB00969FA9 /* User.swift */,
+				7007D08A1C10840200969FA9 /* Lab.swift */,
+				7007D08C1C10852A00969FA9 /* Group.swift */,
+				7007D08F1C10854300969FA9 /* Location.swift */,
+				7007D0931C108A1200969FA9 /* QuestionQueue.swift */,
+				7007D0951C108BE900969FA9 /* Application.swift */,
+			);
+			name = DataTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7007D0961C108BE900969FA9 /* Application.swift in Sources */,
+				7007D0891C1083EB00969FA9 /* User.swift in Sources */,
 				35DE9DA71C107B0F0022DDAB /* ViewController.swift in Sources */,
+				7007D0941C108A1200969FA9 /* QuestionQueue.swift in Sources */,
 				35DE9DA51C107B0F0022DDAB /* AppDelegate.swift in Sources */,
+				7007D08D1C10852A00969FA9 /* Group.swift in Sources */,
+				7007D08B1C10840200969FA9 /* Lab.swift in Sources */,
 				35DE9DAD1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld in Sources */,
+				7007D0901C10854300969FA9 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +424,7 @@
 				35DE9DC31C107B0F0022DDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35DE9DC41C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab 1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +433,7 @@
 				35DE9DC61C107B0F0022DDAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

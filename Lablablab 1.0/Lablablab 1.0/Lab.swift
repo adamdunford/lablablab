@@ -24,15 +24,18 @@ class Lab {
     }
     
     func generateGroups () {
-        
+        //groupCount = ceil(students.count/studentsPerGroup)
+        //baseCountPerGroup=floor(students.count/groupCount)
+        //Create groupCount groups and add baseCountPerGroup students to each
+        //Add remaining students to a group, one per group
     }
     
     func addStudent(student : User) {
-        
+        students.append(student)
     }
     
     func addQuestion(group : Group) {
-        
+        questionQueue.addGroup(group)
     }
     
 }
