@@ -5,15 +5,15 @@ class Lab {
     var studentsPerGroup : Double
     var location : Location
     var instructor : User
-    var date : NSDate
-    var startTime : NSDate
-    var endTime : NSDate
+    var date : NSDateComponents
+    var startTime : NSDateComponents
+    var endTime : NSDateComponents
     var students : [User] = []
     var groups : [Group ] = []
     var questionQueue : QuestionQueue = QuestionQueue()
     
     
-    init (name : String, studentsPerGroup : Int, location : Location, instructor : User, date : NSDate, startTime : NSDate, endTime : NSDate) {
+    init (name : String, studentsPerGroup : Int, location : Location, instructor : User, date : NSDateComponents, startTime : NSDateComponents, endTime : NSDateComponents) {
         self.name = name
         self.studentsPerGroup = Double(studentsPerGroup)
         self.location = location
@@ -33,8 +33,6 @@ class Lab {
             groups.append(Group(members: [User](students[currentlyAssigned...currentlyAssigned+baseCountPerGroup+extra]), number: i))
             currentlyAssigned += baseCountPerGroup+extra
         }
-        //Create groupCount groups and add baseCountPerGroup students to each
-        //Add remaining students to a group, one per group
     }
     
     func addStudent(student : User) {
