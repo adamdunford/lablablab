@@ -25,13 +25,13 @@ class Lab {
     
     func generateGroups () {
         print("generating groups")
-        let groupCount : Int = Int(ceil(Double(students.count)/studentsPerGroup))
-        let baseCountPerGroup : Int = Int(floor(Double(students.count)/studentsPerGroup))
-        let remainingStudents = students.count - groupCount * baseCountPerGroup
+        let groupCount : Int = Int(ceil(Double(students.count)/studentsPerGroup))           //3
+        let baseCountPerGroup : Int = Int(floor(Double(students.count)/Double(groupCount))) //2
+        let remainingStudents = students.count - groupCount * baseCountPerGroup             //2
         var currentlyAssigned = 0
         for var i = 0; i<groupCount; i++ {
-            let extra = remainingStudents <= i+1 ? 1 : 0
-            groups.append(Group(members: [User](students[currentlyAssigned...currentlyAssigned+baseCountPerGroup+extra]), number: i, lab: self.name))
+            let extra = remainingStudents >= i+1 ? 1 : 0
+            groups.append(Group(members: [User](students[currentlyAssigned...currentlyAssigned+baseCountPerGroup-1+extra]), number: i, lab: self.name))
             currentlyAssigned += baseCountPerGroup+extra
         }
     }

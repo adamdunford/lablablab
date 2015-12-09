@@ -62,7 +62,7 @@ class Application {
         lab3EndTime.hour = 12
         lab3EndTime.minute = 0
         
-        labs.append(Lab(name: "Design", studentsPerGroup: 4, location: locations[2], instructor: instructor, date: lab3Date, startTime: lab3StartTime, endTime: lab3EndTime))
+        labs.append(Lab(name: "Design", studentsPerGroup: 3, location: locations[2], instructor: instructor, date: lab3Date, startTime: lab3StartTime, endTime: lab3EndTime))
         
         //Add more labs if necessary
         print("End init")
