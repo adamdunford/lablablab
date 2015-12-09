@@ -10,7 +10,6 @@ class Group:Equatable {
         self.members = members
         self.number = number
         self.lab = lab
-        print("crating group")
 
         save()
     }
@@ -35,7 +34,7 @@ class Group:Equatable {
         db.saveRecord(group,completionHandler: { (record, error) -> Void in
             
             if(error != nil){
-                print("error")
+                print(error)
             }else{
                 print("saved")
             }

@@ -114,6 +114,8 @@ class Application {
             lab.addStudent(kid4)
             
             lab.generateGroups()
+        
+            sleep(5)
         }
         
         
