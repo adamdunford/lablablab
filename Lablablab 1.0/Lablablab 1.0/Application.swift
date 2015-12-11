@@ -114,10 +114,12 @@ class Application {
             lab.addStudent(kid4)
             
             lab.generateGroups()
-        
-            sleep(5)
         }
         
-        
+        labs[0].addQuestion(labs[0].groups[0])
+        labs[0].addQuestion(labs[0].groups[1])
+        labs[1].addQuestion(labs[1].groups[0])
+        labs[1].addQuestion(labs[1].groups[1])
+        labs[1].removeQuestion(labs[1].groups[1])
     }
 }

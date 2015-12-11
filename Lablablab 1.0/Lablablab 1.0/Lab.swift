@@ -10,7 +10,7 @@ class Lab {
     var endTime : NSDateComponents
     var students : [User] = []
     var groups : [Group ] = []
-    var questionQueue : QuestionQueue = QuestionQueue()
+    var questionQueue : QuestionQueue
     
     
     init (name : String, studentsPerGroup : Int, location : Location, instructor : User, date : NSDateComponents, startTime : NSDateComponents, endTime : NSDateComponents) {
@@ -21,6 +21,7 @@ class Lab {
         self.date = date
         self.startTime = startTime
         self.endTime = endTime
+        self.questionQueue = QuestionQueue(lab : self.name)
     }
     
     func generateGroups () {
@@ -42,6 +43,9 @@ class Lab {
     
     func addQuestion(group : Group) {
         questionQueue.addGroup(group)
+    }
+    func removeQuestion(group : Group){
+        questionQueue.removeGroup(group)
     }
     
 }
