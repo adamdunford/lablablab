@@ -20,6 +20,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Application finished launching")
         Parse.setApplicationId("Q1dWd114OGbjRqR7C8CUNGYZL1C8D9aH2AfiQw4m",clientKey: "G9uOtUxtSipTzWgdCRRmJxDZIH7JzNQ8pp7avHRz")
         Application.application.testStuff()
+        
+        
+        let font = UIFont(name: "Avenir", size: 17.0)
+        let buttonfont = UIFont(name: "Avenir-Heavy", size: 14.0)
+        
+        //extension UILabel {
+        //
+        //    var substituteFontName : String {
+        //        get { return self.font.fontName }
+        //        set {
+        //            if self.font.fontName.rangeOfString("Medium") == nil {
+        //                self.font = UIFont(name: newValue, size: self.font.pointSize)
+        //            }
+        //        }
+        //    }
+        //
+        //    var substituteFontNameBold : String {
+        //        get { return self.font.fontName }
+        //        set {
+        //            if self.font.fontName.rangeOfString("Medium") != nil {
+        //                self.font = UIFont(name: newValue, size: self.font.pointSize)
+        //            }
+        //        }
+        //    }
+        //}
+        
+        UILabel.appearance().font = font!
+        UITextView.appearance().font = font!
+        
+        UILabel.appearanceWhenContainedInInstancesOfClasses([UIButton.self]).font = buttonfont!
+
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: font!]
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        // Sets the translucent background color
+//        UINavigationBar.appearance().backgroundColor = UIColor(red: 0.0, green: 0.3, blue: 0.5, alpha: 0.3)
+        UINavigationBar.appearance().translucent = true
+        
+//        let font = UIFont(name: "Avenir", size: 17.0)
+//        
+//        
+//        extension UILabel {
+//            
+//            var substituteFontName : String {
+//                get { return self.font.fontName }
+//                set { self.font = font! }
+//            }
+//            
+//        }
+        
+     
+        
+        
         return true
     }
 
