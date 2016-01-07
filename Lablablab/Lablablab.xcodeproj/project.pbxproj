@@ -21,6 +21,7 @@
 		35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */; };
 		35AF092E1C3E7627005F6A51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091B1C3E7627005F6A51 /* User.swift */; };
 		35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091C1C3E7627005F6A51 /* ViewController.swift */; };
+		35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09321C3E764E005F6A51 /* Default-568h@2x.png */; };
 		F05F21711C19D58300359297 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F216F1C19D58300359297 /* Bolts.framework */; };
 		F05F21721C19D58300359297 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F21701C19D58300359297 /* Parse.framework */; };
 		F0A30F3C1C1B1C970018AF33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */; };
@@ -54,6 +55,7 @@
 		35AF091B1C3E7627005F6A51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		35AF091C1C3E7627005F6A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lablablab-Bridging-Header.h"; sourceTree = "<group>"; };
+		35AF09321C3E764E005F6A51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35DE9DA11C107B0F0022DDAB /* Lablablab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lablablab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05F216F1C19D58300359297 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F05F21701C19D58300359297 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -101,25 +103,6 @@
 			path = LablablabTests;
 			sourceTree = "<group>";
 		};
-		35A2BB051C3E7BF60003BD05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F0A30F4D1C1B1DA70018AF33 /* SystemConfiguration.framework */,
-				F0A30F4B1C1B1D960018AF33 /* StoreKit.framework */,
-				F0A30F491C1B1D8A0018AF33 /* Security.framework */,
-				F0A30F471C1B1D810018AF33 /* QuartzCore.framework */,
-				F0A30F451C1B1D780018AF33 /* libsqlite3.tbd */,
-				F0A30F431C1B1D630018AF33 /* libz.tbd */,
-				F0A30F411C1B1D560018AF33 /* CoreLocation.framework */,
-				F0A30F3F1C1B1CCA0018AF33 /* CoreGraphics.framework */,
-				F0A30F3D1C1B1CBE0018AF33 /* CFNetwork.framework */,
-				F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */,
-				F05F216F1C19D58300359297 /* Bolts.framework */,
-				F05F21701C19D58300359297 /* Parse.framework */,
-			);
-			path = Frameworks;
-			sourceTree = SOURCE_ROOT;
-		};
 		35AF09091C3E7627005F6A51 /* Lablablab */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,9 +128,21 @@
 		35DE9D981C107B0F0022DDAB = {
 			isa = PBXGroup;
 			children = (
+				35AF09321C3E764E005F6A51 /* Default-568h@2x.png */,
 				35AF09091C3E7627005F6A51 /* Lablablab */,
 				35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */,
-				35A2BB051C3E7BF60003BD05 /* Frameworks */,
+				F0A30F4D1C1B1DA70018AF33 /* SystemConfiguration.framework */,
+				F0A30F4B1C1B1D960018AF33 /* StoreKit.framework */,
+				F0A30F491C1B1D8A0018AF33 /* Security.framework */,
+				F0A30F471C1B1D810018AF33 /* QuartzCore.framework */,
+				F0A30F451C1B1D780018AF33 /* libsqlite3.tbd */,
+				F0A30F431C1B1D630018AF33 /* libz.tbd */,
+				F0A30F411C1B1D560018AF33 /* CoreLocation.framework */,
+				F0A30F3F1C1B1CCA0018AF33 /* CoreGraphics.framework */,
+				F0A30F3D1C1B1CBE0018AF33 /* CFNetwork.framework */,
+				F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */,
+				F05F216F1C19D58300359297 /* Bolts.framework */,
+				F05F21701C19D58300359297 /* Parse.framework */,
 				354D85571C3E782B001AE7D6 /* LablablabTests */,
 				35DE9DA21C107B0F0022DDAB /* Products */,
 			);
@@ -229,6 +224,7 @@
 				35AF09251C3E7627005F6A51 /* Main.storyboard in Resources */,
 				35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */,
 				35AF092A1C3E7627005F6A51 /* Lablablab.entitlements in Resources */,
+				35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */,
 				35AF09241C3E7627005F6A51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
