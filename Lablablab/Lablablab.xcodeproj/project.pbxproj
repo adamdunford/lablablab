@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355C9A1E1C3E94A300B3805A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A1D1C3E94A300B3805A /* LoginViewController.swift */; };
+		355C9A201C3E94C200B3805A /* LabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A1F1C3E94C200B3805A /* LabTableViewController.swift */; };
+		355C9A221C3E94ED00B3805A /* LabDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A211C3E94ED00B3805A /* LabDetailViewController.swift */; };
+		355C9A241C3E958E00B3805A /* LabAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A231C3E958E00B3805A /* LabAddViewController.swift */; };
+		355C9A261C3E959B00B3805A /* LabEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A251C3E959B00B3805A /* LabEditViewController.swift */; };
+		355C9A281C3E95F500B3805A /* HelpQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A271C3E95F500B3805A /* HelpQueueViewController.swift */; };
+		355C9A2C1C3E965E00B3805A /* Core.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355C9A2A1C3E965E00B3805A /* Core.storyboard */; };
+		355C9A2E1C3E989700B3805A /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A2D1C3E989700B3805A /* StyleExtensions.swift */; };
+		355C9A301C3EA2F200B3805A /* LabDetailStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A2F1C3EA2F200B3805A /* LabDetailStudentViewController.swift */; };
 		35AF09211C3E7627005F6A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF090A1C3E7627005F6A51 /* AppDelegate.swift */; };
 		35AF09221C3E7627005F6A51 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF090B1C3E7627005F6A51 /* Application.swift */; };
 		35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090C1C3E7627005F6A51 /* Assets.xcassets */; };
-		35AF09241C3E7627005F6A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */; };
 		35AF09251C3E7627005F6A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090F1C3E7627005F6A51 /* Main.storyboard */; };
 		35AF09261C3E7627005F6A51 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09111C3E7627005F6A51 /* Student.storyboard */; };
 		35AF09271C3E7627005F6A51 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF09131C3E7627005F6A51 /* Group.swift */; };
@@ -21,7 +29,6 @@
 		35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */; };
 		35AF092E1C3E7627005F6A51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091B1C3E7627005F6A51 /* User.swift */; };
 		35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091C1C3E7627005F6A51 /* ViewController.swift */; };
-		35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09321C3E764E005F6A51 /* Default-568h@2x.png */; };
 		F05F21711C19D58300359297 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F216F1C19D58300359297 /* Bolts.framework */; };
 		F05F21721C19D58300359297 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F21701C19D58300359297 /* Parse.framework */; };
 		F0A30F3C1C1B1C970018AF33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */; };
@@ -39,10 +46,18 @@
 /* Begin PBXFileReference section */
 		354D85581C3E782B001AE7D6 /* LablablabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LablablabTests.swift; sourceTree = "<group>"; };
 		354D855A1C3E782B001AE7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		355C9A1D1C3E94A300B3805A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		355C9A1F1C3E94C200B3805A /* LabTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabTableViewController.swift; sourceTree = "<group>"; };
+		355C9A211C3E94ED00B3805A /* LabDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabDetailViewController.swift; sourceTree = "<group>"; };
+		355C9A231C3E958E00B3805A /* LabAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabAddViewController.swift; sourceTree = "<group>"; };
+		355C9A251C3E959B00B3805A /* LabEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabEditViewController.swift; sourceTree = "<group>"; };
+		355C9A271C3E95F500B3805A /* HelpQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpQueueViewController.swift; sourceTree = "<group>"; };
+		355C9A2B1C3E965E00B3805A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Core.storyboard; sourceTree = "<group>"; };
+		355C9A2D1C3E989700B3805A /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
+		355C9A2F1C3EA2F200B3805A /* LabDetailStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabDetailStudentViewController.swift; sourceTree = "<group>"; };
 		35AF090A1C3E7627005F6A51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AF090B1C3E7627005F6A51 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		35AF090C1C3E7627005F6A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35AF090E1C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35AF09101C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35AF09121C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Student.storyboard; sourceTree = "<group>"; };
 		35AF09131C3E7627005F6A51 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -55,7 +70,6 @@
 		35AF091B1C3E7627005F6A51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		35AF091C1C3E7627005F6A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lablablab-Bridging-Header.h"; sourceTree = "<group>"; };
-		35AF09321C3E764E005F6A51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35DE9DA11C107B0F0022DDAB /* Lablablab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lablablab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05F216F1C19D58300359297 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F05F21701C19D58300359297 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -103,34 +117,22 @@
 			path = LablablabTests;
 			sourceTree = "<group>";
 		};
-		35AF09091C3E7627005F6A51 /* Lablablab */ = {
+		355C9A191C3E934500B3805A /* DataTypes */ = {
 			isa = PBXGroup;
 			children = (
-				35AF090A1C3E7627005F6A51 /* AppDelegate.swift */,
 				35AF090B1C3E7627005F6A51 /* Application.swift */,
-				35AF090C1C3E7627005F6A51 /* Assets.xcassets */,
-				35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */,
-				35AF090F1C3E7627005F6A51 /* Main.storyboard */,
-				35AF09111C3E7627005F6A51 /* Student.storyboard */,
 				35AF09131C3E7627005F6A51 /* Group.swift */,
-				35AF09141C3E7627005F6A51 /* Info.plist */,
 				35AF09151C3E7627005F6A51 /* Lab.swift */,
-				35AF09161C3E7627005F6A51 /* Lablablab.entitlements */,
-				35AF09171C3E7627005F6A51 /* Lablablab.xcdatamodeld */,
 				35AF09191C3E7627005F6A51 /* Location.swift */,
 				35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */,
 				35AF091B1C3E7627005F6A51 /* User.swift */,
-				35AF091C1C3E7627005F6A51 /* ViewController.swift */,
 			);
-			path = Lablablab;
+			name = DataTypes;
 			sourceTree = "<group>";
 		};
-		35DE9D981C107B0F0022DDAB = {
+		355C9A291C3E963F00B3805A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35AF09321C3E764E005F6A51 /* Default-568h@2x.png */,
-				35AF09091C3E7627005F6A51 /* Lablablab */,
-				35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */,
 				F0A30F4D1C1B1DA70018AF33 /* SystemConfiguration.framework */,
 				F0A30F4B1C1B1D960018AF33 /* StoreKit.framework */,
 				F0A30F491C1B1D8A0018AF33 /* Security.framework */,
@@ -143,6 +145,41 @@
 				F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */,
 				F05F216F1C19D58300359297 /* Bolts.framework */,
 				F05F21701C19D58300359297 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35AF09091C3E7627005F6A51 /* Lablablab */ = {
+			isa = PBXGroup;
+			children = (
+				355C9A2A1C3E965E00B3805A /* Core.storyboard */,
+				35AF090A1C3E7627005F6A51 /* AppDelegate.swift */,
+				355C9A191C3E934500B3805A /* DataTypes */,
+				35AF090C1C3E7627005F6A51 /* Assets.xcassets */,
+				35AF090F1C3E7627005F6A51 /* Main.storyboard */,
+				35AF09111C3E7627005F6A51 /* Student.storyboard */,
+				35AF09141C3E7627005F6A51 /* Info.plist */,
+				35AF09161C3E7627005F6A51 /* Lablablab.entitlements */,
+				35AF09171C3E7627005F6A51 /* Lablablab.xcdatamodeld */,
+				35AF091C1C3E7627005F6A51 /* ViewController.swift */,
+				355C9A1D1C3E94A300B3805A /* LoginViewController.swift */,
+				355C9A1F1C3E94C200B3805A /* LabTableViewController.swift */,
+				355C9A211C3E94ED00B3805A /* LabDetailViewController.swift */,
+				355C9A2F1C3EA2F200B3805A /* LabDetailStudentViewController.swift */,
+				355C9A231C3E958E00B3805A /* LabAddViewController.swift */,
+				355C9A251C3E959B00B3805A /* LabEditViewController.swift */,
+				355C9A271C3E95F500B3805A /* HelpQueueViewController.swift */,
+				355C9A2D1C3E989700B3805A /* StyleExtensions.swift */,
+			);
+			path = Lablablab;
+			sourceTree = "<group>";
+		};
+		35DE9D981C107B0F0022DDAB = {
+			isa = PBXGroup;
+			children = (
+				35AF09091C3E7627005F6A51 /* Lablablab */,
+				35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */,
+				355C9A291C3E963F00B3805A /* Frameworks */,
 				354D85571C3E782B001AE7D6 /* LablablabTests */,
 				35DE9DA21C107B0F0022DDAB /* Products */,
 			);
@@ -223,9 +260,8 @@
 				35AF09261C3E7627005F6A51 /* Student.storyboard in Resources */,
 				35AF09251C3E7627005F6A51 /* Main.storyboard in Resources */,
 				35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */,
+				355C9A2C1C3E965E00B3805A /* Core.storyboard in Resources */,
 				35AF092A1C3E7627005F6A51 /* Lablablab.entitlements in Resources */,
-				35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */,
-				35AF09241C3E7627005F6A51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,26 +273,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AF09271C3E7627005F6A51 /* Group.swift in Sources */,
+				355C9A2E1C3E989700B3805A /* StyleExtensions.swift in Sources */,
 				35AF09221C3E7627005F6A51 /* Application.swift in Sources */,
 				35AF09211C3E7627005F6A51 /* AppDelegate.swift in Sources */,
 				35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */,
 				35AF09291C3E7627005F6A51 /* Lab.swift in Sources */,
+				355C9A241C3E958E00B3805A /* LabAddViewController.swift in Sources */,
+				355C9A221C3E94ED00B3805A /* LabDetailViewController.swift in Sources */,
 				35AF092E1C3E7627005F6A51 /* User.swift in Sources */,
+				355C9A281C3E95F500B3805A /* HelpQueueViewController.swift in Sources */,
 				35AF092C1C3E7627005F6A51 /* Location.swift in Sources */,
 				35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */,
+				355C9A1E1C3E94A300B3805A /* LoginViewController.swift in Sources */,
 				35AF092B1C3E7627005F6A51 /* Lablablab.xcdatamodeld in Sources */,
+				355C9A261C3E959B00B3805A /* LabEditViewController.swift in Sources */,
+				355C9A301C3EA2F200B3805A /* LabDetailStudentViewController.swift in Sources */,
+				355C9A201C3E94C200B3805A /* LabTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */ = {
+		355C9A2A1C3E965E00B3805A /* Core.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				35AF090E1C3E7627005F6A51 /* Base */,
+				355C9A2B1C3E965E00B3805A /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Core.storyboard;
 			sourceTree = "<group>";
 		};
 		35AF090F1C3E7627005F6A51 /* Main.storyboard */ = {
