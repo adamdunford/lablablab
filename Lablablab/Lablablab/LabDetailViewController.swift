@@ -2,7 +2,7 @@ import UIKit
 
 class LabDetailViewController: UIViewController {
 
-    @IBOutlet weak var labTitle: UILabel!
+    @IBOutlet weak var labName: UILabel!
     @IBOutlet weak var labDate: UILabel!
     @IBOutlet weak var labTime: UILabel!
     @IBOutlet weak var labSupervisor: UILabel!
@@ -14,6 +14,48 @@ class LabDetailViewController: UIViewController {
     
     
     let gradient: CAGradientLayer = CAGradientLayer()
+    
+    
+    var labDetail: Lab? {
+        didSet {
+            self.configureView()
+        }
+    }
+    
+    func configureView() {
+        if let detail = self.labDetail {
+            if let labName = self.labName {
+                labName.text = detail.name
+            }
+ //need to figure out how to format these
+//            if let labDate = self.labDate {
+//                labDate.text = detail.date
+//            }
+//            if let labTitle = self.labTitle {
+//                labTitle.text = detail.name
+//              detail.startTime
+//            detail.endTime
+//            }
+//            if let labSupervisor = self.labSupervisor {
+//                labSupervisor.text = detail.instructor
+//            }
+//            if let labLocation = self.labLocation {
+//                labLocation.text = detail.location
+//            }
+//            if let studentCount = self.studentCount {
+//                studentCount.text = detail(students.count)
+//            }
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "editLab" {
+            let controller = segue.destinationViewController  as! LabEditViewController
+            controller.editBook = self.bookDetail
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +69,15 @@ class LabDetailViewController: UIViewController {
         //        gradient.locations = [0.0, 0.5, 1.0]  // that's if we want to change where they appear
         self.view.layer.insertSublayer(gradient, atIndex: 0)
 
+      
+        labTitle.font = UIFont(name: "Avenir", size: 32.0)
+        labDate.font = UIFont(name: "Avenir", size: 15.0)
+        labTime.font = UIFont(name: "Avenir", size: 15.0)
+        
+        
         // Do any additional setup after loading the view.
+        
+
     }
 
     override func didReceiveMemoryWarning() {

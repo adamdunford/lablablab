@@ -177,7 +177,7 @@
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-XS-t1r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-XS-t1r">
                                 <rect key="frame" x="20" y="72" width="280" height="106"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,9 +240,9 @@
                         <outlet property="helpQueueCount" destination="mCO-OA-PHH" id="JfP-V7-ePC"/>
                         <outlet property="labDate" destination="q2l-D4-x8D" id="gxk-4R-uWj"/>
                         <outlet property="labLocation" destination="72c-WO-7cc" id="JPj-sE-HqU"/>
+                        <outlet property="labName" destination="KUs-XS-t1r" id="pXd-Ev-4Xl"/>
                         <outlet property="labSupervisor" destination="3xr-1X-5CV" id="Xof-B0-vDB"/>
                         <outlet property="labTime" destination="Uje-ZE-seV" id="5FX-j7-FcA"/>
-                        <outlet property="labTitle" destination="KUs-XS-t1r" id="q8Q-DE-dKH"/>
                         <outlet property="studentCount" destination="wwu-IA-J9K" id="slL-Iv-bLk"/>
                         <segue destination="dCe-6N-ka8" kind="push" id="OUB-vf-Aua"/>
                     </connections>
@@ -360,7 +360,7 @@
                                 <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Book Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-fd-WxQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lab Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-fd-WxQ">
                                 <rect key="frame" x="120" y="111" width="180" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -403,6 +403,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit Lab" id="tRR-Ll-GQJ"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="labDate" destination="zt1-kp-a7w" id="J8x-vP-VwA"/>
+                        <outlet property="labName" destination="D5L-fd-WxQ" id="TCP-eM-fMT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2L-DD-o06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
