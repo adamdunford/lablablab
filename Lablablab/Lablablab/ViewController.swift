@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Lablablab 1.0
+//  Lablablab
 //
 //  Created by Adam Dunford on 12/3/15.
 //  Copyright © 2015 CIU196 Mobile Computing. All rights reserved.

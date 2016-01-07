@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35DE9DA51C107B0F0022DDAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */; };
-		35DE9DA71C107B0F0022DDAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DA61C107B0F0022DDAB /* ViewController.swift */; };
-		35DE9DAA1C107B0F0022DDAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DA81C107B0F0022DDAB /* Main.storyboard */; };
-		35DE9DAD1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DAB1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld */; };
-		35DE9DAF1C107B0F0022DDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */; };
-		35DE9DB21C107B0F0022DDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */; };
-		35DE9DBD1C107B0F0022DDAB /* Lablablab_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */; };
-		35FAB5381C158A92005B6C52 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FAB5361C158A92005B6C52 /* Student.storyboard */; };
-		7007D0891C1083EB00969FA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0881C1083EB00969FA9 /* User.swift */; };
-		7007D08B1C10840200969FA9 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08A1C10840200969FA9 /* Lab.swift */; };
-		7007D08D1C10852A00969FA9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08C1C10852A00969FA9 /* Group.swift */; };
-		7007D0901C10854300969FA9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D08F1C10854300969FA9 /* Location.swift */; };
-		7007D0941C108A1200969FA9 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0931C108A1200969FA9 /* QuestionQueue.swift */; };
-		7007D0961C108BE900969FA9 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007D0951C108BE900969FA9 /* Application.swift */; };
+		35AF09211C3E7627005F6A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF090A1C3E7627005F6A51 /* AppDelegate.swift */; };
+		35AF09221C3E7627005F6A51 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF090B1C3E7627005F6A51 /* Application.swift */; };
+		35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090C1C3E7627005F6A51 /* Assets.xcassets */; };
+		35AF09241C3E7627005F6A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */; };
+		35AF09251C3E7627005F6A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF090F1C3E7627005F6A51 /* Main.storyboard */; };
+		35AF09261C3E7627005F6A51 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09111C3E7627005F6A51 /* Student.storyboard */; };
+		35AF09271C3E7627005F6A51 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF09131C3E7627005F6A51 /* Group.swift */; };
+		35AF09291C3E7627005F6A51 /* Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF09151C3E7627005F6A51 /* Lab.swift */; };
+		35AF092A1C3E7627005F6A51 /* Lablablab.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09161C3E7627005F6A51 /* Lablablab.entitlements */; };
+		35AF092B1C3E7627005F6A51 /* Lablablab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AF09171C3E7627005F6A51 /* Lablablab.xcdatamodeld */; };
+		35AF092C1C3E7627005F6A51 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF09191C3E7627005F6A51 /* Location.swift */; };
+		35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */; };
+		35AF092E1C3E7627005F6A51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091B1C3E7627005F6A51 /* User.swift */; };
+		35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091C1C3E7627005F6A51 /* ViewController.swift */; };
+		35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AF09321C3E764E005F6A51 /* Default-568h@2x.png */; };
 		F05F21711C19D58300359297 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F216F1C19D58300359297 /* Bolts.framework */; };
 		F05F21721C19D58300359297 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F21701C19D58300359297 /* Parse.framework */; };
 		F0A30F3C1C1B1C970018AF33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */; };
@@ -35,39 +36,29 @@
 		F0A30F4E1C1B1DA70018AF33 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A30F4D1C1B1DA70018AF33 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		35DE9DB91C107B0F0022DDAB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35DE9D991C107B0F0022DDAB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 35DE9DA01C107B0F0022DDAB;
-			remoteInfo = "Lablablab 1.0";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		35DE9DA11C107B0F0022DDAB /* Lablablab 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lablablab 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35DE9DA61C107B0F0022DDAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35DE9DA91C107B0F0022DDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35DE9DAC1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lablablab_1_0.xcdatamodel; sourceTree = "<group>"; };
-		35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35DE9DB11C107B0F0022DDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		35DE9DB31C107B0F0022DDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35DE9DB81C107B0F0022DDAB /* Lablablab 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lablablab 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lablablab_1_0Tests.swift; sourceTree = "<group>"; };
-		35DE9DBE1C107B0F0022DDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35FAB5371C158A92005B6C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Student.storyboard; sourceTree = "<group>"; };
-		7007D0881C1083EB00969FA9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7007D08A1C10840200969FA9 /* Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
-		7007D08C1C10852A00969FA9 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		7007D08F1C10854300969FA9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		7007D0931C108A1200969FA9 /* QuestionQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionQueue.swift; sourceTree = "<group>"; };
-		7007D0951C108BE900969FA9 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		F05F216A1C15878E00359297 /* Lablablab 1.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Lablablab 1.0.entitlements"; sourceTree = "<group>"; };
+		354D85581C3E782B001AE7D6 /* LablablabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LablablabTests.swift; sourceTree = "<group>"; };
+		354D855A1C3E782B001AE7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35AF090A1C3E7627005F6A51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35AF090B1C3E7627005F6A51 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		35AF090C1C3E7627005F6A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35AF090E1C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35AF09101C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35AF09121C3E7627005F6A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Student.storyboard; sourceTree = "<group>"; };
+		35AF09131C3E7627005F6A51 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		35AF09141C3E7627005F6A51 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35AF09151C3E7627005F6A51 /* Lab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lab.swift; sourceTree = "<group>"; };
+		35AF09161C3E7627005F6A51 /* Lablablab.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Lablablab.entitlements; sourceTree = "<group>"; };
+		35AF09181C3E7627005F6A51 /* Lablablab_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lablablab_1_0.xcdatamodel; sourceTree = "<group>"; };
+		35AF09191C3E7627005F6A51 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionQueue.swift; sourceTree = "<group>"; };
+		35AF091B1C3E7627005F6A51 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		35AF091C1C3E7627005F6A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lablablab-Bridging-Header.h"; sourceTree = "<group>"; };
+		35AF09321C3E764E005F6A51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		35DE9DA11C107B0F0022DDAB /* Lablablab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lablablab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05F216F1C19D58300359297 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F05F21701C19D58300359297 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		F05F21731C19D5DF00359297 /* Lablablab 1.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lablablab 1.0-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F0A30F3D1C1B1CBE0018AF33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F0A30F3F1C1B1CCA0018AF33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,19 +91,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35DE9DB51C107B0F0022DDAB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354D85571C3E782B001AE7D6 /* LablablabTests */ = {
+			isa = PBXGroup;
+			children = (
+				354D85581C3E782B001AE7D6 /* LablablabTests.swift */,
+				354D855A1C3E782B001AE7D6 /* Info.plist */,
+			);
+			path = LablablabTests;
+			sourceTree = "<group>";
+		};
+		35AF09091C3E7627005F6A51 /* Lablablab */ = {
+			isa = PBXGroup;
+			children = (
+				35AF090A1C3E7627005F6A51 /* AppDelegate.swift */,
+				35AF090B1C3E7627005F6A51 /* Application.swift */,
+				35AF090C1C3E7627005F6A51 /* Assets.xcassets */,
+				35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */,
+				35AF090F1C3E7627005F6A51 /* Main.storyboard */,
+				35AF09111C3E7627005F6A51 /* Student.storyboard */,
+				35AF09131C3E7627005F6A51 /* Group.swift */,
+				35AF09141C3E7627005F6A51 /* Info.plist */,
+				35AF09151C3E7627005F6A51 /* Lab.swift */,
+				35AF09161C3E7627005F6A51 /* Lablablab.entitlements */,
+				35AF09171C3E7627005F6A51 /* Lablablab.xcdatamodeld */,
+				35AF09191C3E7627005F6A51 /* Location.swift */,
+				35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */,
+				35AF091B1C3E7627005F6A51 /* User.swift */,
+				35AF091C1C3E7627005F6A51 /* ViewController.swift */,
+			);
+			path = Lablablab;
+			sourceTree = "<group>";
+		};
 		35DE9D981C107B0F0022DDAB = {
 			isa = PBXGroup;
 			children = (
+				35AF09321C3E764E005F6A51 /* Default-568h@2x.png */,
+				35AF09091C3E7627005F6A51 /* Lablablab */,
+				35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */,
 				F0A30F4D1C1B1DA70018AF33 /* SystemConfiguration.framework */,
 				F0A30F4B1C1B1D960018AF33 /* StoreKit.framework */,
 				F0A30F491C1B1D8A0018AF33 /* Security.framework */,
@@ -125,67 +143,25 @@
 				F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */,
 				F05F216F1C19D58300359297 /* Bolts.framework */,
 				F05F21701C19D58300359297 /* Parse.framework */,
-				35DE9DA31C107B0F0022DDAB /* Lablablab 1.0 */,
-				35DE9DBB1C107B0F0022DDAB /* Lablablab 1.0Tests */,
+				354D85571C3E782B001AE7D6 /* LablablabTests */,
 				35DE9DA21C107B0F0022DDAB /* Products */,
-				F05F21731C19D5DF00359297 /* Lablablab 1.0-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		35DE9DA21C107B0F0022DDAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35DE9DA11C107B0F0022DDAB /* Lablablab 1.0.app */,
-				35DE9DB81C107B0F0022DDAB /* Lablablab 1.0Tests.xctest */,
+				35DE9DA11C107B0F0022DDAB /* Lablablab.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		35DE9DA31C107B0F0022DDAB /* Lablablab 1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				F05F216A1C15878E00359297 /* Lablablab 1.0.entitlements */,
-				7007D0871C10839300969FA9 /* DataTypes */,
-				35DE9DA41C107B0F0022DDAB /* AppDelegate.swift */,
-				35DE9DA61C107B0F0022DDAB /* ViewController.swift */,
-				35DE9DA81C107B0F0022DDAB /* Main.storyboard */,
-				35FAB5361C158A92005B6C52 /* Student.storyboard */,
-				35DE9DAE1C107B0F0022DDAB /* Assets.xcassets */,
-				35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */,
-				35DE9DB31C107B0F0022DDAB /* Info.plist */,
-				35DE9DAB1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld */,
-			);
-			path = "Lablablab 1.0";
-			sourceTree = "<group>";
-		};
-		35DE9DBB1C107B0F0022DDAB /* Lablablab 1.0Tests */ = {
-			isa = PBXGroup;
-			children = (
-				35DE9DBC1C107B0F0022DDAB /* Lablablab_1_0Tests.swift */,
-				35DE9DBE1C107B0F0022DDAB /* Info.plist */,
-			);
-			path = "Lablablab 1.0Tests";
-			sourceTree = "<group>";
-		};
-		7007D0871C10839300969FA9 /* DataTypes */ = {
-			isa = PBXGroup;
-			children = (
-				7007D0881C1083EB00969FA9 /* User.swift */,
-				7007D08A1C10840200969FA9 /* Lab.swift */,
-				7007D08C1C10852A00969FA9 /* Group.swift */,
-				7007D08F1C10854300969FA9 /* Location.swift */,
-				7007D0931C108A1200969FA9 /* QuestionQueue.swift */,
-				7007D0951C108BE900969FA9 /* Application.swift */,
-			);
-			name = DataTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35DE9DA01C107B0F0022DDAB /* Lablablab 1.0 */ = {
+		35DE9DA01C107B0F0022DDAB /* Lablablab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35DE9DC11C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab 1.0" */;
+			buildConfigurationList = 35DE9DC11C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab" */;
 			buildPhases = (
 				35DE9D9D1C107B0F0022DDAB /* Sources */,
 				35DE9D9E1C107B0F0022DDAB /* Frameworks */,
@@ -195,28 +171,10 @@
 			);
 			dependencies = (
 			);
-			name = "Lablablab 1.0";
+			name = Lablablab;
 			productName = "Lablablab 1.0";
-			productReference = 35DE9DA11C107B0F0022DDAB /* Lablablab 1.0.app */;
+			productReference = 35DE9DA11C107B0F0022DDAB /* Lablablab.app */;
 			productType = "com.apple.product-type.application";
-		};
-		35DE9DB71C107B0F0022DDAB /* Lablablab 1.0Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35DE9DC41C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab 1.0Tests" */;
-			buildPhases = (
-				35DE9DB41C107B0F0022DDAB /* Sources */,
-				35DE9DB51C107B0F0022DDAB /* Frameworks */,
-				35DE9DB61C107B0F0022DDAB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35DE9DBA1C107B0F0022DDAB /* PBXTargetDependency */,
-			);
-			name = "Lablablab 1.0Tests";
-			productName = "Lablablab 1.0Tests";
-			productReference = 35DE9DB81C107B0F0022DDAB /* Lablablab 1.0Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,7 +182,7 @@
 		35DE9D991C107B0F0022DDAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "CIU196 Mobile Computing";
 				TargetAttributes = {
@@ -237,13 +195,9 @@
 							};
 						};
 					};
-					35DE9DB71C107B0F0022DDAB = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 35DE9DA01C107B0F0022DDAB;
-					};
 				};
 			};
-			buildConfigurationList = 35DE9D9C1C107B0F0022DDAB /* Build configuration list for PBXProject "Lablablab 1.0" */;
+			buildConfigurationList = 35DE9D9C1C107B0F0022DDAB /* Build configuration list for PBXProject "Lablablab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -256,8 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35DE9DA01C107B0F0022DDAB /* Lablablab 1.0 */,
-				35DE9DB71C107B0F0022DDAB /* Lablablab 1.0Tests */,
+				35DE9DA01C107B0F0022DDAB /* Lablablab */,
 			);
 		};
 /* End PBXProject section */
@@ -267,17 +220,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FAB5381C158A92005B6C52 /* Student.storyboard in Resources */,
-				35DE9DB21C107B0F0022DDAB /* LaunchScreen.storyboard in Resources */,
-				35DE9DAF1C107B0F0022DDAB /* Assets.xcassets in Resources */,
-				35DE9DAA1C107B0F0022DDAB /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35DE9DB61C107B0F0022DDAB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				35AF09261C3E7627005F6A51 /* Student.storyboard in Resources */,
+				35AF09251C3E7627005F6A51 /* Main.storyboard in Resources */,
+				35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */,
+				35AF092A1C3E7627005F6A51 /* Lablablab.entitlements in Resources */,
+				35AF09331C3E764E005F6A51 /* Default-568h@2x.png in Resources */,
+				35AF09241C3E7627005F6A51 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,57 +236,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7007D0961C108BE900969FA9 /* Application.swift in Sources */,
-				7007D0891C1083EB00969FA9 /* User.swift in Sources */,
-				35DE9DA71C107B0F0022DDAB /* ViewController.swift in Sources */,
-				7007D0941C108A1200969FA9 /* QuestionQueue.swift in Sources */,
-				35DE9DA51C107B0F0022DDAB /* AppDelegate.swift in Sources */,
-				7007D08D1C10852A00969FA9 /* Group.swift in Sources */,
-				7007D08B1C10840200969FA9 /* Lab.swift in Sources */,
-				35DE9DAD1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld in Sources */,
-				7007D0901C10854300969FA9 /* Location.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35DE9DB41C107B0F0022DDAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35DE9DBD1C107B0F0022DDAB /* Lablablab_1_0Tests.swift in Sources */,
+				35AF09271C3E7627005F6A51 /* Group.swift in Sources */,
+				35AF09221C3E7627005F6A51 /* Application.swift in Sources */,
+				35AF09211C3E7627005F6A51 /* AppDelegate.swift in Sources */,
+				35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */,
+				35AF09291C3E7627005F6A51 /* Lab.swift in Sources */,
+				35AF092E1C3E7627005F6A51 /* User.swift in Sources */,
+				35AF092C1C3E7627005F6A51 /* Location.swift in Sources */,
+				35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */,
+				35AF092B1C3E7627005F6A51 /* Lablablab.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		35DE9DBA1C107B0F0022DDAB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 35DE9DA01C107B0F0022DDAB /* Lablablab 1.0 */;
-			targetProxy = 35DE9DB91C107B0F0022DDAB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		35DE9DA81C107B0F0022DDAB /* Main.storyboard */ = {
+		35AF090D1C3E7627005F6A51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				35DE9DA91C107B0F0022DDAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		35DE9DB01C107B0F0022DDAB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35DE9DB11C107B0F0022DDAB /* Base */,
+				35AF090E1C3E7627005F6A51 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		35FAB5361C158A92005B6C52 /* Student.storyboard */ = {
+		35AF090F1C3E7627005F6A51 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				35FAB5371C158A92005B6C52 /* Base */,
+				35AF09101C3E7627005F6A51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35AF09111C3E7627005F6A51 /* Student.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35AF09121C3E7627005F6A51 /* Base */,
 			);
 			name = Student.storyboard;
 			sourceTree = "<group>";
@@ -440,12 +372,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Lablablab 1.0/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lablablab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.chalmers.ait.Lablablab-1-0";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.chalmers.ait.Lablablab;
+				PRODUCT_NAME = Lablablab;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Lablablab 1.0-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lablablab-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -461,43 +393,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Lablablab 1.0/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lablablab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.chalmers.ait.Lablablab-1-0";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.chalmers.ait.Lablablab;
+				PRODUCT_NAME = Lablablab;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Lablablab 1.0-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		35DE9DC51C107B0F0022DDAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Lablablab 1.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.chalmers.ait.Lablablab-1-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lablablab 1.0.app/Lablablab 1.0";
-			};
-			name = Debug;
-		};
-		35DE9DC61C107B0F0022DDAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Lablablab 1.0Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.chalmers.ait.Lablablab-1-0Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lablablab 1.0.app/Lablablab 1.0";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lablablab-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35DE9D9C1C107B0F0022DDAB /* Build configuration list for PBXProject "Lablablab 1.0" */ = {
+		35DE9D9C1C107B0F0022DDAB /* Build configuration list for PBXProject "Lablablab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35DE9DBF1C107B0F0022DDAB /* Debug */,
@@ -506,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35DE9DC11C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab 1.0" */ = {
+		35DE9DC11C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35DE9DC21C107B0F0022DDAB /* Debug */,
@@ -515,25 +423,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35DE9DC41C107B0F0022DDAB /* Build configuration list for PBXNativeTarget "Lablablab 1.0Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35DE9DC51C107B0F0022DDAB /* Debug */,
-				35DE9DC61C107B0F0022DDAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		35DE9DAB1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodeld */ = {
+		35AF09171C3E7627005F6A51 /* Lablablab.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				35DE9DAC1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodel */,
+				35AF09181C3E7627005F6A51 /* Lablablab_1_0.xcdatamodel */,
 			);
-			currentVersion = 35DE9DAC1C107B0F0022DDAB /* Lablablab_1_0.xcdatamodel */;
-			path = Lablablab_1_0.xcdatamodeld;
+			currentVersion = 35AF09181C3E7627005F6A51 /* Lablablab_1_0.xcdatamodel */;
+			path = Lablablab.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
