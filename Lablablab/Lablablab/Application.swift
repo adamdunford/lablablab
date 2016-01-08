@@ -121,5 +121,8 @@ class Application {
         labs[1].addQuestion(labs[1].groups[0])
         labs[1].addQuestion(labs[1].groups[1])
         labs[1].removeQuestion(labs[1].groups[1])
+        
+        print("fetchign")
+        labs[1].questionQueue.fetch()
     }
 }
