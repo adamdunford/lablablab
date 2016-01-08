@@ -22,6 +22,7 @@ class LabTableViewController: UITableViewController {
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
+
         if Application.application.currentUser!.isInstructor {
             self.navigationItem.leftBarButtonItem = self.editButtonItem()
         } else {
@@ -75,19 +76,14 @@ class LabTableViewController: UITableViewController {
     // MARK: - Table view
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        
-        //  TO-DO:
-        //  Add lab count
-        //return labs.count() // this doesn't work, obviously
         return Application.application.labs.count
     }
 
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "LabCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
@@ -101,13 +97,16 @@ class LabTableViewController: UITableViewController {
         let userCalendar = NSCalendar.currentCalendar()
         
         cell.detailTextLabel!.text = "\(lab.location.name) - \(formatterDay.stringFromDate(userCalendar.dateFromComponents(lab.date)!))   \(formatterTime.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!))"
-        //  TO-DO:
-        //  Add lab details & references
-//        need to be able to reference some kind of "LabAtIndex(indexPath.row)}
 
-//        cell.textLabel!.text = lab.name
-//        cell.detailTextLabel!.text = lab.location // or date and time?
+        cell.textLabel!.textColor = UIColor.whiteColor()
+        cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)
         
+        cell.detailTextLabel!.textColor = UIColor.whiteColor()
+        cell.detailTextLabel!.font = UIFont(name: "Avenir", size: 11.0)
+        
+                let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
         return cell
     }
     
