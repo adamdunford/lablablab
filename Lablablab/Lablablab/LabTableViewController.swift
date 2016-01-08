@@ -85,13 +85,22 @@ class LabTableViewController: UITableViewController {
         //  TO-DO:
         //  Add lab count
         //return labs.count() // this doesn't work, obviously
-        return 0
+        return Application.application.labs.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "LabCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+        let lab = Application.application.labs[indexPath.row]
+        cell.textLabel!.text = lab.name
+        let formatterDay = NSDateFormatter()
+        let formatterTime = NSDateFormatter()
+        formatterDay.dateFormat = "y-MM-dd"
+        formatterTime.dateFormat = "hh:mm"
 
+        let userCalendar = NSCalendar.currentCalendar()
+        
+        cell.detailTextLabel!.text = "\(lab.location.name) - \(formatterDay.stringFromDate(userCalendar.dateFromComponents(lab.date)!))   \(formatterTime.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!))"
         //  TO-DO:
         //  Add lab details & references
 //        need to be able to reference some kind of "LabAtIndex(indexPath.row)}
@@ -104,7 +113,7 @@ class LabTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return Application.application.currentUser!.isInstructor
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
