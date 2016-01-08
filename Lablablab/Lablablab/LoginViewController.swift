@@ -34,6 +34,20 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signInButtonPressed(sender: AnyObject) {
+        let alert = UIAlertController(title: "Error", message: "User or password are incorrect", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        if username.text != nil && password.text != nil {
+            if Application.application.login(username.text!, password: password.text!) {
+                performSegueWithIdentifier("login", sender: self)
+            } else {
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        } else {
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation

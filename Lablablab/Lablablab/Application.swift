@@ -5,7 +5,7 @@ class Application {
     var userPasswords: [String:String] = ["adam" : "Adampass", "fran" : "Franpass", "alma" : "Almapass", "olof": "Olofpass"]
     var userNames: [String:String] = ["adam" : "Adam", "fran" : "Fran", "alma" : "Alma", "olof": "Olof"]
     var userLastNames: [String:String] = ["adam" : "Dunford", "fran" : "Perkovic", "alma" : "Castillo", "olof": "Torgersson"]
-    var userTypes: [String:Bool] = ["adam" : false, "fran" : false, "Alma" : false, "olof": true]
+    var userTypes: [String:Bool] = ["adam" : false, "fran" : false, "alma" : false, "olof": true]
     
     static var application : Application = Application(locations: [Location(name: "High"), Location(name: "Low"), Location(name: "Gamma"), Location(name: "Alpha"), Location(name: "Beta"), Location(name: "Delta"), Location(name: "Quark")])
     
