@@ -11,13 +11,17 @@ class HelpQueueViewController: UITableViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 3.0/255, green: 64.0/255, blue: 120.0/255, alpha: 1)
-        //        gradient.frame = self.view.bounds
         gradient.frame.size = self.view.frame.size
         gradient.colors = [UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1).CGColor,
             UIColor(red: 3.0/255, green: 64.0/255,  blue: 120.0/255, alpha: 1).CGColor,
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
-        //        gradient.locations = [0.0, 0.5, 1.0]  // that's if we want to change where they appear
         self.view.layer.insertSublayer(gradient, atIndex: 0)
+        
+        UITableViewCell.appearance().textLabel?.textColor = UIColor.whiteColor()
+        UITableViewCell.appearance().textLabel?.font = UIFont(name: "Avenir", size: 17.0)
+        
+        UITableViewCell.appearance().detailTextLabel?.textColor = UIColor.whiteColor()
+        UITableViewCell.appearance().detailTextLabel?.font = UIFont(name: "Avenir", size: 11.0)
         
 
         // Uncomment the following line to preserve selection between presentations
