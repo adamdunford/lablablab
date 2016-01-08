@@ -3,6 +3,8 @@ import UIKit
 class LabEditViewController: UITableViewController {
 
     @IBOutlet weak var labName: UITextField!
+
+    @IBOutlet weak var startTime: UILabel!
     
     
     let gradient: CAGradientLayer = CAGradientLayer()

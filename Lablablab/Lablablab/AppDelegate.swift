@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let font = UIFont(name: "Avenir", size: 17.0)
         let buttonfont = UIFont(name: "Avenir-Heavy", size: 14.0)
         
+        
+//        tableView.backgroundView.layer
+//        UITableView.appearance().backgroundColor = UIColor(red: 218.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
+//        UITableView.appearance().backgroundView?.backgroundColor = UIColor(red: 218.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
+        
+        UITableViewCell.appearance().textLabel?.textColor = UIColor.whiteColor()
+        UITableViewCell.appearance().detailTextLabel?.textColor = UIColor.whiteColor()
         UITextView.appearance().font = font!
         UILabel.appearance().font = font!
         UILabel.appearanceWhenContainedInInstancesOfClasses([UIButton.self]).font = buttonfont!
