@@ -24,27 +24,32 @@ class LabDetailViewController: UIViewController {
     
     func configureView() {
         if let detail = self.labDetail {
-            if let labName = self.labName {
-                labName.text = detail.name
+            if let name = self.labName {
+                name.text = detail.name
             }
- //need to figure out how to format these
-//            if let labDate = self.labDate {
-//                labDate.text = detail.date
-//            }
-//            if let labTitle = self.labTitle {
-//                labTitle.text = detail.name
-//              detail.startTime
-//            detail.endTime
-//            }
-//            if let labSupervisor = self.labSupervisor {
-//                labSupervisor.text = detail.instructor
-//            }
-//            if let labLocation = self.labLocation {
-//                labLocation.text = detail.location
-//            }
-//            if let studentCount = self.studentCount {
-//                studentCount.text = detail(students.count)
-//            }
+            
+            let userCalendar = NSCalendar.currentCalendar()
+            
+            if let date = self.labDate {
+                let formatterDay = NSDateFormatter()
+                formatterDay.dateFormat = "y-MM-dd"
+                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+            }
+            if let time = self.labTime {
+                let formatterTime = NSDateFormatter()
+                formatterTime.dateFormat = "hh:mm"
+                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
+            }
+            
+            if let labSupervisor = self.labSupervisor {
+                labSupervisor.text = detail.instructor.name
+            }
+            if let labLocation = self.labLocation {
+                labLocation.text = detail.location.name
+            }
+            if let studentCount = self.studentCount {
+                studentCount.text = "\(detail.students.count)"
+            }
         }
     }
     
@@ -76,7 +81,7 @@ class LabDetailViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
-        
+        self.configureView()
 
     }
 

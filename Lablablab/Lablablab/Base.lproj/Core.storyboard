@@ -159,8 +159,8 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <segue destination="jJv-dv-QJO" kind="push" identifier="viewLab" id="MWu-60-QNK"/>
-                        <segue destination="dGF-Ja-Vvi" kind="push" id="4pt-wY-r9K"/>
+                        <segue destination="jJv-dv-QJO" kind="push" identifier="viewLabTeacher" id="MWu-60-QNK"/>
+                        <segue destination="dGF-Ja-Vvi" kind="push" identifier="viewLabStudent" id="4pt-wY-r9K"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4PN-nv-eTV" userLabel="First Responder" sceneMemberID="firstResponder"/>

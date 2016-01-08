@@ -45,22 +45,24 @@ class LabTableViewController: UITableViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            //this is one way
-            //            let controller = segue.destinationViewController as! LabDetailViewController
-            //            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
-            //                controller.labDetail = application.labs[indexPath.row]
-            //            }
-            //this is another way; both work
+        if segue.identifier == "viewLabTeacher" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = application.labs[indexPath.row]
+                let lab = Application.application.labs[indexPath.row]
                 let controller = segue.destinationViewController as! LabDetailViewController
-                controller.labDetail = object
+                controller.labDetail = lab
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        } else if segue.identifier == "addLab" {
-            let controller = segue.destinationViewController as! LabAddViewController
+        } else if segue.identifier == "viewLabStudent" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let lab = Application.application.labs[indexPath.row]
+                let controller = segue.destinationViewController as! LabDetailStudentViewController
+                controller.labDetail = lab
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }else if segue.identifier == "addLab" {
+            //let controller = segue.destinationViewController as! LabAddViewController
 
             // WHAT'S MISSING HERE??
             //            controller.labDetail = labDetail
@@ -81,10 +83,7 @@ class LabTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-        //  TO-DO:
-        //  Add lab count
-        //return labs.count() // this doesn't work, obviously
+    
         return Application.application.labs.count
     }
 
@@ -114,6 +113,14 @@ class LabTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return Application.application.currentUser!.isInstructor
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if Application.application.currentUser!.isInstructor {
+            performSegueWithIdentifier("viewLabTeacher", sender: self)
+        } else {
+            performSegueWithIdentifier("viewLabStudent", sender: self)
+        }
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

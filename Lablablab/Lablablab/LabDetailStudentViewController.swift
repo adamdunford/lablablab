@@ -1,10 +1,14 @@
 import UIKit
 
 class LabDetailStudentViewController: UIViewController {
-
-    
     
     let gradient: CAGradientLayer = CAGradientLayer()
+    
+    var labDetail: Lab? {
+        didSet {
+            self.configureView()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,11 @@ class LabDetailStudentViewController: UIViewController {
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
         // Do any additional setup after loading the view.
+        self.configureView()
+    }
+    
+    func configureView() {
+        
     }
     
     override func didReceiveMemoryWarning() {
