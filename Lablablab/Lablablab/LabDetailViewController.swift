@@ -33,7 +33,7 @@ class LabDetailViewController: UIViewController {
             if let date = self.labDate {
                 let formatterDay = NSDateFormatter()
                 formatterDay.dateFormat = "y-MM-dd"
-                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
             }
             if let time = self.labTime {
                 let formatterTime = NSDateFormatter()

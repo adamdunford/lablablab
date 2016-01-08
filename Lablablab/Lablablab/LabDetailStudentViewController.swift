@@ -41,11 +41,9 @@ class LabDetailStudentViewController: UIViewController {
             let userCalendar = NSCalendar.currentCalendar()
             
             if let time = self.labTime {
-                let formatterDay = NSDateFormatter()
-                formatterDay.dateFormat = "y-MM-dd"
-                let formatterTime = NSDateFormatter()
-                formatterTime.dateFormat = "hh:mm"
-                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))  \(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "y-MM-dd hh:mm"
+                time.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
             }
             
             if let labSupervisor = self.labSupervisor {

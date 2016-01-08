@@ -273,7 +273,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Nec-JK-DhW">
                             <connections>
-                                <segue destination="YNO-V9-kjg" kind="push" id="QcG-au-kE2"/>
+                                <segue destination="YNO-V9-kjg" kind="push" identifier="editLab" id="QcG-au-kE2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -518,6 +518,10 @@
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njr-sv-wUY">
                                                     <rect key="frame" x="0.0" y="-86" width="320" height="216"/>
                                                     <animations/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="0L7-hV-lJU" id="stR-Bt-7KW"/>
+                                                        <outlet property="delegate" destination="0L7-hV-lJU" id="3PN-fy-qQX"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <animations/>
@@ -599,7 +603,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="startTime" destination="Lqi-mq-5r5" id="wr4-Ur-3ys"/>
+                        <outlet property="autoCreateGroups" destination="hLF-ZS-EDm" id="wbS-Jp-mwQ"/>
+                        <outlet property="endTimePicker" destination="hvp-56-0aJ" id="g6c-IZ-zkx"/>
+                        <outlet property="groupSize" destination="QHz-Or-cnj" id="A1I-EB-DUi"/>
+                        <outlet property="labName" destination="nWD-CD-EIh" id="jGP-FE-Jqf"/>
+                        <outlet property="locationPicker" destination="njr-sv-wUY" id="saz-zO-TFL"/>
+                        <outlet property="startTimePicker" destination="RPA-gT-sj2" id="BXo-Qq-Pxx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ni-Ri-0XM" userLabel="First Responder" sceneMemberID="firstResponder"/>

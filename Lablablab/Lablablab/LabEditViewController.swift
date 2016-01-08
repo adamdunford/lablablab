@@ -1,11 +1,18 @@
 import UIKit
 
-class LabEditViewController: UITableViewController {
+class LabEditViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    @IBOutlet weak var labName: UITextField!
-
-    @IBOutlet weak var startTime: UILabel!
+    @IBOutlet var labName: UITextField!
     
+    @IBOutlet var startTimePicker: UIDatePicker!
+    
+    @IBOutlet var endTimePicker: UIDatePicker!
+    
+    @IBOutlet var locationPicker: UIPickerView!
+    
+    @IBOutlet var autoCreateGroups: UISwitch!
+    
+    @IBOutlet var groupSize: UISegmentedControl!
     
     let gradient: CAGradientLayer = CAGradientLayer()
     
@@ -18,37 +25,41 @@ class LabEditViewController: UITableViewController {
     
     func configureView() {
         if let editLab = self.editLab {
-            if let labName = self.labName {
-                labName.text = editLab.name
+            if let name = self.labName {
+                name.text = editLab.name
             }
+            let userCalendar = NSCalendar.currentCalendar()
+            if let startTimePicker = self.startTimePicker {
+                startTimePicker.date = userCalendar.dateFromComponents(editLab.startTime)!
+            }
+            if let endTimePicker = self.endTimePicker {
+                endTimePicker.date = userCalendar.dateFromComponents(editLab.endTime)!
+            }
+            if let locationPicker = self.locationPicker {
+                locationPicker.selectRow(Application.application.locations.indexOf({$0.name==editLab.location.name})!, inComponent: 0, animated: false)
+            }
+            if let autoCreateGroups = self.autoCreateGroups {
+                autoCreateGroups.setOn(true, animated: false)
+            }
+            if let groupSizeControl = self.groupSize {
+                groupSizeControl.selectedSegmentIndex = Int(editLab.studentsPerGroup) - 2
+            }
+            
+
         }
     }
     
-//    func configureView() {
-//        if let detail = self.labDetail {
-//            if let labTitle = self.labTitle {
-//                labTitle.text = detail.name
-//            }
-//            //need to figure out how to format these
-//            //            if let labDate = self.labDate {
-//            //                labDate.text = detail.date
-//            //            }
-//            //            if let labTitle = self.labTitle {
-//            //                labTitle.text = detail.name
-//            //              detail.startTime
-//            //            detail.endTime
-//            //            }
-//            //            if let labSupervisor = self.labSupervisor {
-//            //                labSupervisor.text = detail.instructor
-//            //            }
-//            //            if let labLocation = self.labLocation {
-//            //                labLocation.text = detail.location
-//            //            }
-//            //            if let studentCount = self.studentCount {
-//            //                studentCount.text = detail(students.count)
-//            //            }
-//        }
-//    }
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Application.application.locations.count;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return Application.application.locations[row].name
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,9 +70,10 @@ class LabEditViewController: UITableViewController {
             UIColor(red: 3.0/255, green: 64.0/255,  blue: 120.0/255, alpha: 1).CGColor,
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
         self.view.layer.insertSublayer(gradient, atIndex: 0)
+        self.locationPicker.dataSource = self
+        self.locationPicker.delegate = self
     
-    
-
+        self.configureView()
         // Do any additional setup after loading the view.
     }
 
