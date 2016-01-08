@@ -91,22 +91,22 @@ class LabEditViewController: UITableViewController, UIPickerViewDataSource, UIPi
     
     @IBAction func updateLab(sender: UIBarButtonItem) {
         
-//        let title: String? = editTitle.text
-//        let author: String? = editAuthor.text
-//        let price: Double? = Double(editPrice.text!)
-//        let isbn: String? = editIsbn.text
-//        let course: String? = editCourse.text
-//        
-//        if let book = editBook {
-//            book.author = author!
-//            book.title = title!
-//            book.price = Double(price!)
-//            book.isbn = isbn!
-//            book.course = course!
-//            SimpleBookManager.bookManager.saveChanges()
-//            navigationController?.popViewControllerAnimated(true)
-//        }
+        let name  = labName.text
+        let startTime = startTimePicker.date
+        let endTime = endTimePicker.date
+        let locationPosition = locationPicker.selectedRowInComponent(0)
+        let studentsPerGroup = groupSize.selectedSegmentIndex + 2
         
+        if let lab = editLab {
+            lab.name = name!
+            let userCalendar = NSCalendar.currentCalendar()
+            let unitFlags: NSCalendarUnit = [.Hour, .Day, .Month, .Year]
+            lab.startTime = userCalendar.components(unitFlags, fromDate: startTime)
+            lab.endTime = userCalendar.components(unitFlags, fromDate: endTime)
+            lab.location = Application.application.locations[locationPosition]
+            lab.studentsPerGroup = Double(studentsPerGroup)
+        }
+        navigationController?.popViewControllerAnimated(true)
     }
 
 }
