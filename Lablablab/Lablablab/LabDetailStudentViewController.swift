@@ -2,6 +2,12 @@ import UIKit
 
 class LabDetailStudentViewController: UIViewController {
     
+    @IBOutlet var labTitle: UILabel!
+    @IBOutlet var labSupervisor: UILabel!
+    @IBOutlet var labLocation: UILabel!
+    @IBOutlet var labTime: UILabel!
+    
+    
     let gradient: CAGradientLayer = CAGradientLayer()
     
     var labDetail: Lab? {
@@ -27,7 +33,29 @@ class LabDetailStudentViewController: UIViewController {
     }
     
     func configureView() {
-        
+        if let detail = self.labDetail {
+            if let title = self.labTitle {
+                title.text = detail.name
+            }
+            
+            let userCalendar = NSCalendar.currentCalendar()
+            
+            if let time = self.labTime {
+                let formatterDay = NSDateFormatter()
+                formatterDay.dateFormat = "y-MM-dd"
+                let formatterTime = NSDateFormatter()
+                formatterTime.dateFormat = "hh:mm"
+                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))  \(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+            }
+            
+            if let labSupervisor = self.labSupervisor {
+                labSupervisor.text = detail.instructor.name
+            }
+            if let labLocation = self.labLocation {
+                labLocation.text = detail.location.name
+            }
+
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -26,9 +26,9 @@ class Lab {
     
     func generateGroups () {
         print("generating groups")
-        let groupCount : Int = Int(ceil(Double(students.count)/studentsPerGroup))           //3
-        let baseCountPerGroup : Int = Int(floor(Double(students.count)/Double(groupCount))) //2
-        let remainingStudents = students.count - groupCount * baseCountPerGroup             //2
+        let groupCount : Int = Int(ceil(Double(students.count)/studentsPerGroup))
+        let baseCountPerGroup : Int = Int(floor(Double(students.count)/Double(groupCount)))
+        let remainingStudents = students.count - groupCount * baseCountPerGroup             
         var currentlyAssigned = 0
         for var i = 0; i<groupCount; i++ {
             let extra = remainingStudents >= i+1 ? 1 : 0

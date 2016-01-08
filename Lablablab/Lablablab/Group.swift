@@ -14,9 +14,7 @@ class Group:Equatable {
         save()
     }
     
-    func save(){
-// // Go to hell cloudkit!!!!
-        
+    func save(){        
 //        var group: CKRecord!
 //        
 //        group = CKRecord(recordType: "Group")

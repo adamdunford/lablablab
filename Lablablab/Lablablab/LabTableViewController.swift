@@ -71,10 +71,6 @@ class LabTableViewController: UITableViewController {
     }
     
     
-    
-    
-    
-    
     // MARK: - Table view
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -128,12 +124,8 @@ class LabTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
-            //  TO-DO:
-            //  Allow labs to be deleted
-            
-            
-            //bookManager.removeBook(bookManager.bookAtIndex(indexPath.row))
-            //bookManager.saveChanges()
+            Application.application.labs.removeAtIndex(indexPath.row)
+            //Do we want this to happen in the server too? Is it a priority?
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
