@@ -11,7 +11,7 @@ class Application {
     
     var currentUser : User?
     var locations : [Location] = []
-    var labs : [Lab ] = []
+    var labs : [Lab] = []
     
     init(locations : [Location]) {
         print("Initing")

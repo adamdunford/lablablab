@@ -52,7 +52,7 @@ class LabDetailViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "editLab" {
             let controller = segue.destinationViewController  as! LabEditViewController
-            controller.editBook = self.bookDetail
+            controller.editLab = self.labDetail
         }
     }
     
@@ -70,7 +70,7 @@ class LabDetailViewController: UIViewController {
         self.view.layer.insertSublayer(gradient, atIndex: 0)
 
       
-        labTitle.font = UIFont(name: "Avenir", size: 32.0)
+        labName.font = UIFont(name: "Avenir", size: 32.0)
         labDate.font = UIFont(name: "Avenir", size: 15.0)
         labTime.font = UIFont(name: "Avenir", size: 15.0)
         
