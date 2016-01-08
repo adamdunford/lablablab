@@ -1000,8 +1000,12 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="addBtn" destination="DaG-sj-2Ev" id="4oc-BL-ep6"/>
+                        <outlet property="endTimePicker" destination="ZUh-mS-OMp" id="JTj-oY-7iK"/>
+                        <outlet property="groupSize" destination="Wzd-AS-iLD" id="qAs-uQ-KPH"/>
+                        <outlet property="locationPicker" destination="vv5-Rw-h1V" id="NYD-bR-PfS"/>
                         <outlet property="newLab" destination="ma9-sI-HTN" id="waf-BS-JNq"/>
                         <outlet property="startTime" destination="wDk-yk-7Ub" id="LOC-cc-dDC"/>
+                        <outlet property="startTimePicker" destination="c4a-B0-coM" id="Q2D-Zf-Urw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bq-la-gxM" userLabel="First Responder" sceneMemberID="firstResponder"/>

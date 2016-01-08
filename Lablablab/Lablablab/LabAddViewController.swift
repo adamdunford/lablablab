@@ -15,7 +15,12 @@ class LabAddViewController: UITableViewController {
     @IBOutlet weak var addBtn: UIBarButtonItem!
     @IBOutlet weak var newLab: UITextField!
     
+    @IBOutlet var startTimePicker: UIDatePicker!
     @IBOutlet weak var startTime: UILabel!
+    @IBOutlet var endTimePicker: UIDatePicker!
+    @IBOutlet var locationPicker: UIPickerView!
+    
+    @IBOutlet var groupSize: UISegmentedControl!
     
     @IBAction func startTime(sender: UITextField) {
         
@@ -88,9 +93,16 @@ class LabAddViewController: UITableViewController {
     }
 
     @IBAction func addLab(sender: UIBarButtonItem) {
-        let name: String? = newLab.text
-
-//  ADD CODE TO ADD LAB HERE
+        let name  = newLab.text
+        let startTime = startTimePicker.date
+        let endTime = endTimePicker.date
+        let locationPosition = locationPicker.selectedRowInComponent(0)
+        let studentsPerGroup = groupSize.selectedSegmentIndex + 2
+        let userCalendar = NSCalendar.currentCalendar()
+        let unitFlags: NSCalendarUnit = [.Hour, .Day, .Month, .Year]
+        let lab = Lab(name: name!, studentsPerGroup: studentsPerGroup, location: Application.application.locations[locationPosition], instructor: Application.application.currentUser!,startTime:  userCalendar.components(unitFlags, fromDate: startTime),endTime:  userCalendar.components(unitFlags, fromDate: endTime))
+        Application.application.labs.append(lab)
+        navigationController?.popViewControllerAnimated(true)
         
     }
 
