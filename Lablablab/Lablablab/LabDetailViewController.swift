@@ -11,6 +11,7 @@ class LabDetailViewController: UIViewController {
     @IBOutlet weak var studentCount: UILabel!
     @IBOutlet weak var helpQueueCount: UILabel!
     
+    @IBOutlet var createGroupsButton: UIButton!
     
     
     let gradient: CAGradientLayer = CAGradientLayer()
@@ -94,6 +95,10 @@ class LabDetailViewController: UIViewController {
         self.configureView()
     }
     
+    @IBAction func generateGroupsPressed(sender: AnyObject) {
+        labDetail?.generateGroups()
+        createGroupsButton.hidden = true
+    }
 
     /*
     // MARK: - Navigation
