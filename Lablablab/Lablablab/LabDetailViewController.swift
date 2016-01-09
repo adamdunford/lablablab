@@ -11,6 +11,7 @@ class LabDetailViewController: UIViewController {
     @IBOutlet weak var studentCount: UILabel!
     @IBOutlet weak var helpQueueCount: UILabel!
     
+    @IBOutlet var createGroupsButton: UIButton!
     
     
     let gradient: CAGradientLayer = CAGradientLayer()
@@ -33,7 +34,7 @@ class LabDetailViewController: UIViewController {
             if let date = self.labDate {
                 let formatterDay = NSDateFormatter()
                 formatterDay.dateFormat = "y-MM-dd"
-                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
             }
             if let time = self.labTime {
                 let formatterTime = NSDateFormatter()
@@ -90,6 +91,14 @@ class LabDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.configureView()
+    }
+    
+    @IBAction func generateGroupsPressed(sender: AnyObject) {
+        labDetail?.generateGroups()
+        createGroupsButton.hidden = true
+    }
 
     /*
     // MARK: - Navigation

@@ -7,6 +7,10 @@ class LabDetailStudentViewController: UIViewController {
     @IBOutlet var labLocation: UILabel!
     @IBOutlet var labTime: UILabel!
     
+    @IBOutlet var joinButton: UIButton!
+    @IBOutlet var waitingLabel: UILabel!
+    @IBOutlet var groupTable: UITableView!
+    @IBOutlet var askQuestionButton: UIButton!
     
     let gradient: CAGradientLayer = CAGradientLayer()
     
@@ -30,6 +34,12 @@ class LabDetailStudentViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.configureView()
+        waitingLabel.hidden = true
+        if labDetail!.groups.count == 0 {   //Check why it doesnt work
+            groupTable.hidden = true
+            askQuestionButton.hidden = true
+        }
+        
     }
     
     func configureView() {
@@ -41,11 +51,9 @@ class LabDetailStudentViewController: UIViewController {
             let userCalendar = NSCalendar.currentCalendar()
             
             if let time = self.labTime {
-                let formatterDay = NSDateFormatter()
-                formatterDay.dateFormat = "y-MM-dd"
-                let formatterTime = NSDateFormatter()
-                formatterTime.dateFormat = "hh:mm"
-                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))  \(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.date)!))"
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "y-MM-dd hh:mm"
+                time.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
             }
             
             if let labSupervisor = self.labSupervisor {
@@ -63,6 +71,12 @@ class LabDetailStudentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func joinedLab(sender: AnyObject) {
+        labDetail!.addStudent(Application.application.currentUser!)
+        //Send this information to the server
+        waitingLabel.hidden = false
+        joinButton.hidden = true
+    }
     
     /*
     // MARK: - Navigation

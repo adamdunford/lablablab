@@ -236,13 +236,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-j8-Ux6">
-                                <rect key="frame" x="20" y="391" width="280" height="56"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.066666666669999999" blue="0.15686274510000001" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="CREATE GROUPS"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labSupervisor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-1X-5CV">
                                 <rect key="frame" x="133" y="230" width="180" height="28"/>
                                 <animations/>
@@ -256,6 +249,16 @@
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.066666666669999999" blue="0.15686274510000001" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                 <state key="normal" title="VIEW QUESTION QUEUE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-j8-Ux6">
+                                <rect key="frame" x="20" y="391" width="280" height="56"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.066666666669999999" blue="0.15686274510000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <state key="normal" title="CREATE GROUPS"/>
+                                <connections>
+                                    <action selector="generateGroupsPressed:" destination="jJv-dv-QJO" eventType="touchUpInside" id="ycn-sR-Lbe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -273,12 +276,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Nec-JK-DhW">
                             <connections>
-                                <segue destination="YNO-V9-kjg" kind="push" id="QcG-au-kE2"/>
+                                <segue destination="YNO-V9-kjg" kind="push" identifier="editLab" id="QcG-au-kE2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="createGroupsButton" destination="Kic-j8-Ux6" id="hIw-k4-j37"/>
                         <outlet property="helpQueueCount" destination="mCO-OA-PHH" id="JfP-V7-ePC"/>
                         <outlet property="labDate" destination="q2l-D4-x8D" id="gxk-4R-uWj"/>
                         <outlet property="labLocation" destination="72c-WO-7cc" id="JPj-sE-HqU"/>
@@ -518,6 +522,10 @@
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njr-sv-wUY">
                                                     <rect key="frame" x="0.0" y="-86" width="320" height="216"/>
                                                     <animations/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="0L7-hV-lJU" id="stR-Bt-7KW"/>
+                                                        <outlet property="delegate" destination="0L7-hV-lJU" id="3PN-fy-qQX"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <animations/>
@@ -599,7 +607,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="startTime" destination="Lqi-mq-5r5" id="wr4-Ur-3ys"/>
+                        <outlet property="autoCreateGroups" destination="hLF-ZS-EDm" id="wbS-Jp-mwQ"/>
+                        <outlet property="endTimePicker" destination="hvp-56-0aJ" id="g6c-IZ-zkx"/>
+                        <outlet property="groupSize" destination="QHz-Or-cnj" id="A1I-EB-DUi"/>
+                        <outlet property="labName" destination="nWD-CD-EIh" id="jGP-FE-Jqf"/>
+                        <outlet property="locationPicker" destination="njr-sv-wUY" id="saz-zO-TFL"/>
+                        <outlet property="startTimePicker" destination="RPA-gT-sj2" id="BXo-Qq-Pxx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ni-Ri-0XM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -683,6 +696,9 @@
                                 <rect key="frame" x="117" y="278" width="87" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Join this Lab"/>
+                                <connections>
+                                    <action selector="joinedLab:" destination="dGF-Ja-Vvi" eventType="touchUpInside" id="Yde-uZ-7AW"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kzn-GO-YcC">
                                 <rect key="frame" x="20" y="380" width="280" height="121"/>
@@ -718,10 +734,14 @@
                     <navigationItem key="navigationItem" title="Lab Details" id="SUP-0D-V53"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="askQuestionButton" destination="jNr-fk-dEV" id="6Ne-H7-EzO"/>
+                        <outlet property="groupTable" destination="kzn-GO-YcC" id="x81-1f-TnZ"/>
+                        <outlet property="joinButton" destination="7Ib-Fd-yBf" id="mSp-Nh-JIc"/>
                         <outlet property="labLocation" destination="ba6-t6-HtQ" id="kNP-qx-Jax"/>
                         <outlet property="labSupervisor" destination="gnM-jU-aX2" id="HcX-DD-7gq"/>
                         <outlet property="labTime" destination="ZZx-Eg-TNn" id="Rkz-Ke-pHX"/>
                         <outlet property="labTitle" destination="f2p-jP-K9k" id="ngk-vU-mJI"/>
+                        <outlet property="waitingLabel" destination="jiB-Dj-fzq" id="4cI-og-I9B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nat-eP-lkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -991,8 +1011,12 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="addBtn" destination="DaG-sj-2Ev" id="4oc-BL-ep6"/>
+                        <outlet property="endTimePicker" destination="ZUh-mS-OMp" id="JTj-oY-7iK"/>
+                        <outlet property="groupSize" destination="Wzd-AS-iLD" id="qAs-uQ-KPH"/>
+                        <outlet property="locationPicker" destination="vv5-Rw-h1V" id="NYD-bR-PfS"/>
                         <outlet property="newLab" destination="ma9-sI-HTN" id="waf-BS-JNq"/>
                         <outlet property="startTime" destination="wDk-yk-7Ub" id="LOC-cc-dDC"/>
+                        <outlet property="startTimePicker" destination="c4a-B0-coM" id="Q2D-Zf-Urw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bq-la-gxM" userLabel="First Responder" sceneMemberID="firstResponder"/>

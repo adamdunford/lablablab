@@ -5,7 +5,6 @@ class Lab {
     var studentsPerGroup : Double
     var location : Location
     var instructor : User
-    var date : NSDateComponents
     var startTime : NSDateComponents
     var endTime : NSDateComponents
     var students : [User] = []
@@ -13,12 +12,11 @@ class Lab {
     var questionQueue : QuestionQueue
     
     
-    init (name : String, studentsPerGroup : Int, location : Location, instructor : User, date : NSDateComponents, startTime : NSDateComponents, endTime : NSDateComponents) {
+    init (name : String, studentsPerGroup : Int, location : Location, instructor : User, startTime : NSDateComponents, endTime : NSDateComponents) {
         self.name = name
         self.studentsPerGroup = Double(studentsPerGroup)
         self.location = location
         self.instructor = instructor
-        self.date = date
         self.startTime = startTime
         self.endTime = endTime
         self.questionQueue = QuestionQueue(lab : self.name)

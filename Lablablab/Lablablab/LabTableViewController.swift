@@ -87,14 +87,12 @@ class LabTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         let lab = Application.application.labs[indexPath.row]
         cell.textLabel!.text = lab.name
-        let formatterDay = NSDateFormatter()
-        let formatterTime = NSDateFormatter()
-        formatterDay.dateFormat = "y-MM-dd"
-        formatterTime.dateFormat = "hh:mm"
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = " y-MM-dd - hh:mm"
 
         let userCalendar = NSCalendar.currentCalendar()
-        
-        cell.detailTextLabel!.text = "\(lab.location.name) - \(formatterDay.stringFromDate(userCalendar.dateFromComponents(lab.date)!))   \(formatterTime.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!))"
+
+        cell.detailTextLabel!.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!))"
 
         cell.textLabel!.textColor = UIColor.whiteColor()
         cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)
