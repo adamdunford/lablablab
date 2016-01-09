@@ -35,12 +35,21 @@ class Lab {
         }
     }
     
+    func groupForStudent(student : User) -> Group?{
+        for group in groups {
+            if group.containsStudent(student) {
+                return group
+            }
+        }
+        return nil
+    }
+    
     func addStudent(student : User) {
         students.append(student)
     }
     
-    func addQuestion(group : Group) {
-        questionQueue.addGroup(group)
+    func addQuestion(group : Group, location: Location) {
+        questionQueue.addGroup(group, location: location)
     }
     func removeQuestion(group : Group){
         questionQueue.removeGroup(group)

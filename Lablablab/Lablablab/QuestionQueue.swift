@@ -4,6 +4,7 @@ import Foundation
 class QuestionQueue {
     
     var groupsQueue : [Group ] = []
+    var locationsQueue : [Location ] = []
     var lab : String
     
     init(lab : String){
@@ -11,13 +12,15 @@ class QuestionQueue {
         save()
     }
     
-    func addGroup(group : Group) {
-       groupsQueue.append(group)
+    func addGroup(group : Group, location: Location) {
+        groupsQueue.append(group)
+        locationsQueue.append(location)
         save()
     }
     
     func removeGroup(group : Group)  {
         if(groupsQueue.indexOf(group) != nil){
+            locationsQueue.removeAtIndex(groupsQueue.indexOf(group)!)
             groupsQueue.removeAtIndex(groupsQueue.indexOf(group)!)
         }
         
@@ -38,6 +41,7 @@ class QuestionQueue {
                     print(g.number)
                 }
                 groupsQueue = []
+                locationsQueue = []
                 
                 for q in queue{
                     let pred = NSPredicate(format: "number = \(q) AND lab = '\(self.lab)'")

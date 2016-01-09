@@ -249,6 +249,9 @@
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.066666666669999999" blue="0.15686274510000001" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                 <state key="normal" title="VIEW QUESTION QUEUE"/>
+                                <connections>
+                                    <action selector="viewQuestionQueuePressed:" destination="jJv-dv-QJO" eventType="touchUpInside" id="bCV-bu-usv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-j8-Ux6">
                                 <rect key="frame" x="20" y="391" width="280" height="56"/>
@@ -290,7 +293,7 @@
                         <outlet property="labSupervisor" destination="3xr-1X-5CV" id="Xof-B0-vDB"/>
                         <outlet property="labTime" destination="Uje-ZE-seV" id="5FX-j7-FcA"/>
                         <outlet property="studentCount" destination="wwu-IA-J9K" id="slL-Iv-bLk"/>
-                        <segue destination="dCe-6N-ka8" kind="push" id="OUB-vf-Aua"/>
+                        <segue destination="dCe-6N-ka8" kind="push" identifier="viewQuestionQueue" id="OUB-vf-Aua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wy9-Mf-PWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -691,6 +694,9 @@
                                 <rect key="frame" x="114" y="509" width="103" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Ask a Question"/>
+                                <connections>
+                                    <action selector="askedQuestion:" destination="dGF-Ja-Vvi" eventType="touchUpInside" id="qzC-uX-lM9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-Fd-yBf">
                                 <rect key="frame" x="117" y="278" width="87" height="30"/>

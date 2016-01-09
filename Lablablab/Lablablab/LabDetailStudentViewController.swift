@@ -9,7 +9,9 @@ class LabDetailStudentViewController: UIViewController {
     
     @IBOutlet var joinButton: UIButton!
     @IBOutlet var waitingLabel: UILabel!
-    @IBOutlet var groupTable: UITableView!
+    @IBOutlet var groupTable: UITableView! //We need to push data from the group members in here with some controller I image 
+    //Data is in labDetails.groupForStudent(Application.application.currentUser).members
+    //For each member I assume we need to show member.name and member.lastname
     @IBOutlet var askQuestionButton: UIButton!
     
     let gradient: CAGradientLayer = CAGradientLayer()
@@ -34,12 +36,27 @@ class LabDetailStudentViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         self.configureView()
-        waitingLabel.hidden = true
-        if labDetail!.groups.count == 0 {   //Check why it doesnt work
+        configureButtons()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        configureButtons()
+        super.viewWillAppear(animated)
+    }
+    
+    func configureButtons() {
+        if labDetail?.groups.count > 0 {
+            joinButton.hidden = true
+            waitingLabel.hidden = true
+        } else {
             groupTable.hidden = true
             askQuestionButton.hidden = true
+            if labDetail!.students.contains({$0 === Application.application.currentUser}) {
+                joinButton.hidden = true
+            } else {
+                waitingLabel.hidden = true
+            }
         }
-        
     }
     
     func configureView() {
@@ -76,6 +93,11 @@ class LabDetailStudentViewController: UIViewController {
         //Send this information to the server
         waitingLabel.hidden = false
         joinButton.hidden = true
+    }
+    
+    @IBAction func askedQuestion(sender: AnyObject) {
+        let group = labDetail!.groupForStudent(Application.application.currentUser!)
+        labDetail?.addQuestion(group!,location:  Location(name: "High"))  //Change to actual location if there happens to be any in the UI
     }
     
     /*

@@ -59,6 +59,9 @@ class LabDetailViewController: UIViewController {
         if segue.identifier == "editLab" {
             let controller = segue.destinationViewController  as! LabEditViewController
             controller.editLab = self.labDetail
+        } else if segue.identifier == "viewQuestionQueue" {
+            let controller = segue.destinationViewController  as! HelpQueueViewController
+            controller.questionQueue = self.labDetail?.questionQueue
         }
     }
     
@@ -100,6 +103,9 @@ class LabDetailViewController: UIViewController {
         createGroupsButton.hidden = true
     }
 
+    @IBAction func viewQuestionQueuePressed(sender: AnyObject) {
+        performSegueWithIdentifier("viewQuestionQueue", sender: self)
+    }
     /*
     // MARK: - Navigation
 

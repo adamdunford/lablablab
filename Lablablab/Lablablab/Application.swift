@@ -85,7 +85,7 @@ class Application {
         currentUser = nil
     }
     
-    func testStuff(){
+    /*func testStuff(){
         print("teststuff")
         var fran = User(name:"Fran", lastName: "Perkovic", isInstructor: false)
         fran.setLabs(labs)
@@ -120,13 +120,13 @@ class Application {
             lab.generateGroups()
         }
         
-        labs[0].addQuestion(labs[0].groups[0])
-        labs[0].addQuestion(labs[0].groups[1])
-        labs[1].addQuestion(labs[1].groups[0])
-        labs[1].addQuestion(labs[1].groups[1])
+        labs[0].addQuestion(labs[0].groups[0], location: Location(name: "High"))
+        labs[0].addQuestion(labs[0].groups[1], location: Location(name: "Low"))
+        labs[1].addQuestion(labs[1].groups[0], location: Location(name: "Alpha"))
+        labs[1].addQuestion(labs[1].groups[1], location: Location(name: "Gamma"))
         labs[1].removeQuestion(labs[1].groups[1])
         
         print("fetchign")
         labs[1].questionQueue.fetch()
-    }
+    }*/
 }

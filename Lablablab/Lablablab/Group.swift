@@ -1,7 +1,7 @@
 import Foundation
 import CloudKit
 
-class Group:Equatable {
+class Group:Equatable, Hashable {
     let members : [User]
     let number : Int
     let lab : String
@@ -12,6 +12,16 @@ class Group:Equatable {
         self.lab = lab
 
         save()
+    }
+    
+    var hashValue : Int {
+        get {
+            return number
+        }
+    }
+    
+    func containsStudent(student : User) -> Bool {
+        return members.contains({$0 === student})
     }
     
     func save(){        
