@@ -65,6 +65,15 @@ class QuestionQueue {
                         print(g.number)
                     }
                 }
+                
+                for l in (objects[0]["location"] as! String).componentsSeparatedByString(","){
+                    locationsQueue.append(Location(name: l))
+                }
+                
+                print("Locations are:")
+                for l in locationsQueue{
+                    print(l.name)
+                }
             }else{
                 print("No queue found")
             }
@@ -101,6 +110,16 @@ class QuestionQueue {
             
             
             queue["groups"] = groups.joinWithSeparator(",")
+            
+            var locations = [String]()
+            
+            for l in self.locationsQueue{
+                locations.append("\(l.name)")
+            }
+            
+            
+            queue["location"] = locations.joinWithSeparator(",")
+
             
 //            queue.saveInBackgroundWithBlock{
 //                (suceeded: Bool, error : NSError?) -> Void  in

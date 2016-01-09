@@ -85,7 +85,7 @@ class Application {
         currentUser = nil
     }
     
-    /*func testStuff(){
+    func testStuff(){
         print("teststuff")
         var fran = User(name:"Fran", lastName: "Perkovic", isInstructor: false)
         fran.setLabs(labs)
@@ -128,5 +128,5 @@ class Application {
         
         print("fetchign")
         labs[1].questionQueue.fetch()
-    }*/
+    }
 }

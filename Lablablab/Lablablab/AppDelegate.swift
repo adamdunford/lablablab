@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         print("Application finished launching")
         Parse.setApplicationId("Q1dWd114OGbjRqR7C8CUNGYZL1C8D9aH2AfiQw4m",clientKey: "G9uOtUxtSipTzWgdCRRmJxDZIH7JzNQ8pp7avHRz")
-        //Application.application.testStuff()
+        Application.application.testStuff()
         
         
         let font = UIFont(name: "Avenir", size: 17.0)
