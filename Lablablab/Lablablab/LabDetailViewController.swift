@@ -57,7 +57,9 @@ class LabDetailViewController: UIViewController {
             }
             
             if detail.groups.count > 0 {
-                queueCountLabel.text = "\(detail.questionQueue.groupsQueue.count) groups have questions"
+                if let queueCount = queueCountLabel {
+                    queueCount.text = "\(detail.questionQueue.groupsQueue.count) groups have questions"                }
+                
             } else {
                 if let queueCount = queueCountLabel {
                     queueCount.hidden = true

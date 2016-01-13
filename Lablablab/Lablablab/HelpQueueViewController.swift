@@ -16,7 +16,7 @@ class HelpQueueViewController: UITableViewController {
             UIColor(red: 3.0/255, green: 64.0/255,  blue: 120.0/255, alpha: 1).CGColor,
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
         self.view.layer.insertSublayer(gradient, atIndex: 0)
-        
+    
         UITableViewCell.appearance().textLabel?.textColor = UIColor.whiteColor()
         UITableViewCell.appearance().textLabel?.font = UIFont(name: "Avenir", size: 17.0)
         
@@ -50,18 +50,23 @@ class HelpQueueViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        cell.textLabel!.text = "Group \(questionQueue?.groupsQueue[indexPath.row].number)"
-        var membersName : String = ""
-        for student in (questionQueue?.groupsQueue[indexPath.row].members)! {
-            membersName.appendContentsOf(student.name)
-            membersName.appendContentsOf(" ")
-            membersName.appendContentsOf(student.lastName)
-            membersName.appendContentsOf(" ")
-        }
-        cell.detailTextLabel!.text = membersName
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("GroupCell", forIndexPath: indexPath)
+        cell.textLabel!.text = "Group \(questionQueue?.groupsQueue[indexPath.row].number) - \(questionQueue?.locationsQueue[indexPath.row].name)"
+        cell.detailTextLabel!.text = questionQueue?.groupsQueue[indexPath.row].membersString()
+        
+        cell.textLabel!.textColor = UIColor.whiteColor()
+        cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)
+        
+        cell.detailTextLabel!.textColor = UIColor.whiteColor()
+        cell.detailTextLabel!.font = UIFont(name: "Avenir", size: 11.0)
+        
+        //        cell.borderColor = UIColor.whiteColor()
+        //        cell.borderWidth = 1.0
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
+        
         return cell
     }
     

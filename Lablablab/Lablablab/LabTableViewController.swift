@@ -14,7 +14,6 @@ class LabTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.view.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
         gradient.frame.size = self.view.frame.size
         gradient.colors = [UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1).CGColor,
@@ -22,7 +21,6 @@ class LabTableViewController: UITableViewController {
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
-
         if Application.application.currentUser!.isInstructor {
             //self.navigationItem.leftBarButtonItem = self.editButtonItem()
         } else {
