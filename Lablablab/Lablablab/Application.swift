@@ -85,8 +85,8 @@ class Application {
         currentUser = nil
     }
     
-    func testStuff(){
-        print("teststuff")
+    func test(){
+        print("testing")
         let fran = User(name:"Fran", lastName: "Perkovic", isInstructor: false)
         fran.setLabs(labs)
         
@@ -126,7 +126,7 @@ class Application {
         labs[1].addQuestion(labs[1].groups[1], location: Location(name: "Gamma"))
         labs[1].removeQuestion(labs[1].groups[1])
         
-        print("fetchign")
+        print("fetching")
         labs[1].questionQueue.fetch()
     }
 }

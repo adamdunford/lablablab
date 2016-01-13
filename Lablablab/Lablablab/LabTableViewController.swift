@@ -24,7 +24,7 @@ class LabTableViewController: UITableViewController {
         
 
         if Application.application.currentUser!.isInstructor {
-            self.navigationItem.leftBarButtonItem = self.editButtonItem()
+            //self.navigationItem.leftBarButtonItem = self.editButtonItem()
         } else {
             self.navigationItem.rightBarButtonItem = nil
         }

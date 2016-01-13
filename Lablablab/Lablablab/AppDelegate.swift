@@ -18,9 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         print("Application finished launching")
-        Parse.setApplicationId("Q1dWd114OGbjRqR7C8CUNGYZL1C8D9aH2AfiQw4m",clientKey: "G9uOtUxtSipTzWgdCRRmJxDZIH7JzNQ8pp7avHRz")
-        Application.application.testStuff()
-        
+        Parse.setApplicationId("Q1dWd114OGbjRqR7C8CUNGYZL1C8D9aH2AfiQw4m",clientKey: "G9uOtUxtSipTzWgdCRRmJxDZIH7JzNQ8pp7avHRz")        
         
         let font = UIFont(name: "Avenir", size: 17.0)
         let buttonfont = UIFont(name: "Avenir-Heavy", size: 14.0)

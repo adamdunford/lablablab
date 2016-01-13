@@ -9,9 +9,13 @@ class LabDetailStudentViewController: UIViewController {
     
     @IBOutlet var joinButton: UIButton!
     @IBOutlet var waitingLabel: UILabel!
-    @IBOutlet var groupTable: UITableView! //We need to push data from the group members in here with some controller I image 
+    //We need to push data from the group members in here with some controller I image
     //Data is in labDetails.groupForStudent(Application.application.currentUser).members
     //For each member I assume we need to show member.name and member.lastname
+    
+    @IBOutlet var groupNumberLabel: UILabel!
+    
+    @IBOutlet var groupMembersLabel: UILabel!
     @IBOutlet var askQuestionButton: UIButton!
     
     let gradient: CAGradientLayer = CAGradientLayer()
@@ -48,10 +52,16 @@ class LabDetailStudentViewController: UIViewController {
         if labDetail?.groups.count > 0 {
             joinButton.hidden = true
             waitingLabel.hidden = true
+            groupNumberLabel.text = "Group \(labDetail!.groupForStudent(Application.application.currentUser!)!.number)"
+            groupMembersLabel.text = labDetail!.groupForStudent(Application.application.currentUser!)!.membersString()
+            if labDetail!.questionQueue.groupsQueue.contains(labDetail!.groupForStudent(Application.application.currentUser!)!) {
+                askQuestionButton.hidden = true
+            }
         } else {
-            groupTable.hidden = true
+            groupNumberLabel.hidden = true
+            groupMembersLabel.hidden = true
             askQuestionButton.hidden = true
-            if labDetail!.students.contains({$0 === Application.application.currentUser}) {
+            if labDetail!.students.contains({$0.name == Application.application.currentUser!.name && $0.lastName == Application.application.currentUser?.lastName}) {
                 joinButton.hidden = true
             } else {
                 waitingLabel.hidden = true
@@ -97,7 +107,9 @@ class LabDetailStudentViewController: UIViewController {
     
     @IBAction func askedQuestion(sender: AnyObject) {
         let group = labDetail!.groupForStudent(Application.application.currentUser!)
-        labDetail?.addQuestion(group!,location:  Location(name: "High"))  //Change to actual location if there happens to be any in the UI
+        let g = group!
+        labDetail?.addQuestion(g,location:  Location(name: "High"))  //Change to actual location if there happens to be any in the UI
+        askQuestionButton.hidden = true
     }
     
     /*

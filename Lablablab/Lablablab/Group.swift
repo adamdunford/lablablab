@@ -21,7 +21,20 @@ class Group:Equatable, Hashable {
     }
     
     func containsStudent(student : User) -> Bool {
-        return members.contains({$0 === student})
+        return members.contains({$0 == student})
+    }
+    
+    func membersString() -> String {
+        var result : String = ""
+        var i = 0
+        for member in members{
+            result.appendContentsOf("\(member.name) \(member.lastName)")
+            if i < members.count-1 {
+                result.appendContentsOf(", ")
+            }
+            i++
+        }
+        return result
     }
     
     func save(){        

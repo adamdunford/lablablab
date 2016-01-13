@@ -1,6 +1,6 @@
 import Foundation
 
-class User {
+class User : Equatable{
     var name : String
     var lastName : String
     var isInstructor : Bool
@@ -18,4 +18,8 @@ class User {
         self.labs = labs
     }
     
+}
+
+func ==(lhs: User, rhs: User) -> Bool {
+    return lhs.name==rhs.name && lhs.lastName==rhs.lastName
 }

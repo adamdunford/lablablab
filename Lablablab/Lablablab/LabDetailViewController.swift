@@ -9,11 +9,12 @@ class LabDetailViewController: UIViewController {
     @IBOutlet weak var labLocation: UILabel!
     
     @IBOutlet weak var studentCount: UILabel!
-    @IBOutlet weak var helpQueueCount: UILabel!
     
     @IBOutlet var createGroupsButton: UIButton!
     
+    @IBOutlet var viewQuestionQueueButton: UIButton!
     
+    @IBOutlet var queueCountLabel: UILabel!
     let gradient: CAGradientLayer = CAGradientLayer()
     
     
@@ -50,6 +51,22 @@ class LabDetailViewController: UIViewController {
             }
             if let studentCount = self.studentCount {
                 studentCount.text = "\(detail.students.count) in \(detail.groups.count) groups"
+            }
+            if let studentCount = self.studentCount {
+                studentCount.text = "\(detail.students.count) in \(detail.groups.count) groups"
+            }
+            
+            if detail.groups.count > 0 {
+                queueCountLabel.text = "\(detail.questionQueue.groupsQueue.count) groups have questions"
+            } else {
+                if let queueCount = queueCountLabel {
+                    queueCount.hidden = true
+                }
+                if let queueButton = viewQuestionQueueButton {
+                    queueButton.hidden = true
+                }
+                
+                
             }
         }
     }
@@ -101,6 +118,10 @@ class LabDetailViewController: UIViewController {
     @IBAction func generateGroupsPressed(sender: AnyObject) {
         labDetail?.generateGroups()
         createGroupsButton.hidden = true
+        queueCountLabel.hidden = false
+        queueCountLabel.text = "\(labDetail!.questionQueue.groupsQueue.count) groups have questions"
+        viewQuestionQueueButton.hidden = false
+        studentCount.text = "\(labDetail!.students.count) in \(labDetail!.groups.count) groups"
     }
 
     @IBAction func viewQuestionQueuePressed(sender: AnyObject) {
