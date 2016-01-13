@@ -22,7 +22,7 @@ class LabTableViewController: UITableViewController {
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
         if Application.application.currentUser!.isInstructor {
-            //self.navigationItem.leftBarButtonItem = self.editButtonItem()
+            self.navigationItem.leftBarButtonItem = self.editButtonItem()
         } else {
             self.navigationItem.rightBarButtonItem = nil
         }
