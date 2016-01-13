@@ -25,7 +25,7 @@ class LabDetailStudentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(red: 3.0/255, green: 64.0/255, blue: 120.0/255, alpha: 1)
+        self.view.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
         //        gradient.frame = self.view.bounds
         gradient.frame.size = self.view.frame.size
         gradient.colors = [UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1).CGColor,
@@ -70,7 +70,7 @@ class LabDetailStudentViewController: UIViewController {
             if let time = self.labTime {
                 let formatter = NSDateFormatter()
                 formatter.dateFormat = "y-MM-dd hh:mm"
-                time.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
+                time.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!)) - \(formatter.stringFromDate(userCalendar.dateFromComponents(detail.endTime)!))"
             }
             
             if let labSupervisor = self.labSupervisor {

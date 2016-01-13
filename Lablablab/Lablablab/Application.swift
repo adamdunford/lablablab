@@ -87,25 +87,25 @@ class Application {
     
     func testStuff(){
         print("teststuff")
-        var fran = User(name:"Fran", lastName: "Perkovic", isInstructor: false)
+        let fran = User(name:"Fran", lastName: "Perkovic", isInstructor: false)
         fran.setLabs(labs)
         
-        var alma = User(name:"Alma", lastName: "Castillo", isInstructor: false)
+        let alma = User(name:"Alma", lastName: "Castillo", isInstructor: false)
         alma.setLabs(labs)
         
-        var adam = User(name:"Adam", lastName: "Dunford", isInstructor: false)
+        let adam = User(name:"Adam", lastName: "Dunford", isInstructor: false)
         adam.setLabs(labs)
         
-        var kid1 = User(name:"Kid1", lastName: "Lastname", isInstructor: false)
+        let kid1 = User(name:"Kid1", lastName: "Lastname", isInstructor: false)
         kid1.setLabs(labs)
         
-        var kid2 = User(name:"Kid2", lastName: "Lastname", isInstructor: false)
+        let kid2 = User(name:"Kid2", lastName: "Lastname", isInstructor: false)
         kid2.setLabs(labs)
         
-        var kid3 = User(name:"Kid3", lastName: "Lastname", isInstructor: false)
+        let kid3 = User(name:"Kid3", lastName: "Lastname", isInstructor: false)
         kid3.setLabs(labs)
         
-        var kid4 = User(name:"Kid4", lastName: "Lastname", isInstructor: false)
+        let kid4 = User(name:"Kid4", lastName: "Lastname", isInstructor: false)
         kid4.setLabs(labs)
         
         for lab in labs{

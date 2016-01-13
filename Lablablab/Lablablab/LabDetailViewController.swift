@@ -33,13 +33,13 @@ class LabDetailViewController: UIViewController {
             
             if let date = self.labDate {
                 let formatterDay = NSDateFormatter()
-                formatterDay.dateFormat = "y-MM-dd"
+                formatterDay.dateFormat = "EEEE, d MMM yyyy"
                 date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
             }
             if let time = self.labTime {
                 let formatterTime = NSDateFormatter()
-                formatterTime.dateFormat = "hh:mm"
-                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
+                formatterTime.dateFormat = "H:mm"
+                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!)) - \(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.endTime)!))"
             }
             
             if let labSupervisor = self.labSupervisor {
@@ -49,7 +49,7 @@ class LabDetailViewController: UIViewController {
                 labLocation.text = detail.location.name
             }
             if let studentCount = self.studentCount {
-                studentCount.text = "\(detail.students.count)"
+                studentCount.text = "\(detail.students.count) in \(detail.groups.count) groups"
             }
         }
     }
@@ -69,7 +69,7 @@ class LabDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(red: 3.0/255, green: 64.0/255, blue: 120.0/255, alpha: 1)
+        self.view.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
         //        gradient.frame = self.view.bounds
         gradient.frame.size = self.view.frame.size
         gradient.colors = [UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1).CGColor,

@@ -88,11 +88,11 @@ class LabTableViewController: UITableViewController {
         let lab = Application.application.labs[indexPath.row]
         cell.textLabel!.text = lab.name
         let formatter = NSDateFormatter()
-        formatter.dateFormat = " y-MM-dd - hh:mm"
+        formatter.dateFormat = "EEEE, d MMM yyyy, H.mm"
 
         let userCalendar = NSCalendar.currentCalendar()
-
-        cell.detailTextLabel!.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!))"
+        
+        cell.detailTextLabel!.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!)) - \(lab.location.name)"
 
         cell.textLabel!.textColor = UIColor.whiteColor()
         cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)
@@ -100,9 +100,13 @@ class LabTableViewController: UITableViewController {
         cell.detailTextLabel!.textColor = UIColor.whiteColor()
         cell.detailTextLabel!.font = UIFont(name: "Avenir", size: 11.0)
         
-                let backgroundView = UIView()
+//        cell.borderColor = UIColor.whiteColor()
+//        cell.borderWidth = 1.0
+        
+        let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor(red: 18.0/255, green: 130.0/255, blue: 162.0/255, alpha: 1)
         cell.selectedBackgroundView = backgroundView
+        
         return cell
     }
     
