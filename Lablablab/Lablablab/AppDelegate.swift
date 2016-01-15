@@ -20,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Application finished launching")
         Parse.setApplicationId("Q1dWd114OGbjRqR7C8CUNGYZL1C8D9aH2AfiQw4m",clientKey: "G9uOtUxtSipTzWgdCRRmJxDZIH7JzNQ8pp7avHRz")
         Application.application.test()
+        
+        
+// using external library to handle problem when keyboard covers fields: https://github.com/hackiftekhar/IQKeyboardManager
+        
+        IQKeyboardManager.sharedManager().enable = true
+
 
         
         let font = UIFont(name: "Avenir", size: 17.0)
