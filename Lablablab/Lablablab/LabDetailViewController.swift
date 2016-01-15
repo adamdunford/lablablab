@@ -101,7 +101,8 @@ class LabDetailViewController: UIViewController {
         labName.font = UIFont(name: "Avenir", size: 32.0)
         labDate.font = UIFont(name: "Avenir", size: 15.0)
         labTime.font = UIFont(name: "Avenir", size: 15.0)
-        
+
+        labName.numberOfLines = 0 
         
         // Do any additional setup after loading the view.
         self.configureView()

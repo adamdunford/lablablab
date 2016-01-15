@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -89,16 +90,6 @@
                                     <action selector="signInButtonPressed:" destination="FSa-Nh-MKh" eventType="touchUpInside" id="Xlh-c1-k7O"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" misplaced="YES" image="lablablab-title" translatesAutoresizingMaskIntoConstraints="NO" id="m5o-RI-75X">
-                                <rect key="frame" x="0.0" y="94" width="320" height="37"/>
-                                <accessibility key="accessibilityConfiguration" label="LabLabLab">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="9ZJ-1P-tLH"/>
-                                    <constraint firstAttribute="width" secondItem="m5o-RI-75X" secondAttribute="height" multiplier="320:37" id="jfH-dm-r1S"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to Lablablab using your Chalmers CID and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="OJT-ff-jPf">
                                 <rect key="frame" x="42" y="139" width="236" height="56"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -113,14 +104,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="redraw" misplaced="YES" image="chalmers-crest" translatesAutoresizingMaskIntoConstraints="NO" id="LIz-J3-xbQ">
-                                <rect key="frame" x="-51" y="458" width="422" height="395"/>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="redraw" image="chalmers-crest" translatesAutoresizingMaskIntoConstraints="NO" id="LIz-J3-xbQ">
+                                <rect key="frame" x="55" y="451" width="210" height="196"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="4bx-8F-1eU"/>
                                     <constraint firstAttribute="width" secondItem="LIz-J3-xbQ" secondAttribute="height" multiplier="16:15" id="Jk1-AK-mYa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" image="lablablab-title" translatesAutoresizingMaskIntoConstraints="NO" id="m5o-RI-75X">
+                                <rect key="frame" x="0.0" y="106" width="320" height="37"/>
+                                <accessibility key="accessibilityConfiguration" label="LabLabLab">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="9ZJ-1P-tLH"/>
+                                    <constraint firstAttribute="width" secondItem="m5o-RI-75X" secondAttribute="height" multiplier="320:37" id="jfH-dm-r1S"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -238,20 +239,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-XS-t1r">
-                                <rect key="frame" x="20" y="72" width="280" height="106"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-XS-t1r">
+                                <rect key="frame" x="16" y="134" width="290" height="44"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Does this go to multiple texts">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="32" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.80000000000000004" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labDate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2l-D4-x8D">
-                                <rect key="frame" x="70" y="151" width="180" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labDate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2l-D4-x8D">
+                                <rect key="frame" x="131" y="174" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-ZE-seV">
-                                <rect key="frame" x="70" y="177" width="180" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-ZE-seV">
+                                <rect key="frame" x="130" y="195" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -280,44 +288,74 @@
                                     <action selector="generateGroupsPressed:" destination="jJv-dv-QJO" eventType="touchUpInside" id="ycn-sR-Lbe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labLocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72c-WO-7cc">
-                                <rect key="frame" x="153" y="270" width="130" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labLocation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72c-WO-7cc">
+                                <rect key="frame" x="140" y="269" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="ww8-HN-xRY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supervisor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-XI-kwA">
-                                <rect key="frame" x="38" y="228" width="100" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supervisor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-XI-kwA">
+                                <rect key="frame" x="47" y="232" width="85" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-Yh-Exx">
-                                <rect key="frame" x="38" y="269" width="100" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-Yh-Exx">
+                                <rect key="frame" x="62" y="269" width="70" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labSupervisor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-1X-5CV">
-                                <rect key="frame" x="153" y="228" width="130" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-K0-QvE">
+                                <rect key="frame" x="60" y="306" width="72" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-IA-J9K">
+                                <rect key="frame" x="140" y="306" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="S6a-nr-Ejj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-K0-QvE">
-                                <rect key="frame" x="38" y="312" width="100" height="28"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwu-IA-J9K">
-                                <rect key="frame" x="153" y="312" width="130" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labSupervisor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-1X-5CV">
+                                <rect key="frame" x="140" y="232" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="rNa-Bh-YzJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.01176470588" green="0.25098039220000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KUs-XS-t1r" firstAttribute="width" secondItem="aFX-kI-J7o" secondAttribute="width" constant="-30" id="1c4-22-nwg"/>
+                            <constraint firstItem="72c-WO-7cc" firstAttribute="leading" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-20" id="21h-JH-WL2"/>
+                            <constraint firstItem="q2l-D4-x8D" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="BUQ-mC-Wyb"/>
+                            <constraint firstItem="wwu-IA-J9K" firstAttribute="centerY" secondItem="aFX-kI-J7o" secondAttribute="centerY" constant="32" id="Db6-Zq-7H2"/>
+                            <constraint firstItem="3xr-1X-5CV" firstAttribute="leading" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-20" id="Mcg-v6-QTb"/>
+                            <constraint firstItem="q2l-D4-x8D" firstAttribute="top" secondItem="KUs-XS-t1r" secondAttribute="bottom" constant="-4" id="R8j-R7-8Zs"/>
+                            <constraint firstItem="72c-WO-7cc" firstAttribute="top" secondItem="3xr-1X-5CV" secondAttribute="bottom" constant="16" id="TFn-3Q-r04"/>
+                            <constraint firstItem="Uje-ZE-seV" firstAttribute="top" secondItem="q2l-D4-x8D" secondAttribute="bottom" id="WWd-cZ-aVN"/>
+                            <constraint firstItem="Y8t-Yh-Exx" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="WY9-hK-3PR"/>
+                            <constraint firstItem="7Hd-K0-QvE" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="XhG-4v-pQx"/>
+                            <constraint firstItem="Y8t-Yh-Exx" firstAttribute="top" secondItem="72c-WO-7cc" secondAttribute="top" id="Z7p-mL-JEu"/>
+                            <constraint firstItem="3xr-1X-5CV" firstAttribute="top" secondItem="Uje-ZE-seV" secondAttribute="bottom" constant="16" id="aYx-TR-0f0"/>
+                            <constraint firstItem="Uje-ZE-seV" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="c85-Nq-Flo"/>
+                            <constraint firstItem="KUs-XS-t1r" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="f91-uT-YpT"/>
+                            <constraint firstItem="wwu-IA-J9K" firstAttribute="top" secondItem="72c-WO-7cc" secondAttribute="bottom" constant="16" id="fCO-sd-sxR"/>
+                            <constraint firstItem="4SK-XI-kwA" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="igq-Dv-YUt"/>
+                            <constraint firstItem="4SK-XI-kwA" firstAttribute="top" secondItem="3xr-1X-5CV" secondAttribute="top" id="lTZ-UT-zLa"/>
+                            <constraint firstItem="7Hd-K0-QvE" firstAttribute="top" secondItem="wwu-IA-J9K" secondAttribute="top" id="u3i-f9-Red"/>
+                            <constraint firstItem="wwu-IA-J9K" firstAttribute="leading" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-20" id="yOR-ix-dBF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="n6f-hD-Ixn">
                         <barButtonItem key="leftBarButtonItem" id="oAT-0B-Icf">

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F8139DBE1BC54540FCF02B275885BEE7A2E73904",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F8139DBE1BC54540FCF02B275885BEE7A2E73904" : 0,
+    "DF461CAADB13706454B17F2BB50F488BBAD743E5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F795E44-B9AC-4B30-82C9-A68815F5B3E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F8139DBE1BC54540FCF02B275885BEE7A2E73904" : "lablablab\/",
+    "DF461CAADB13706454B17F2BB50F488BBAD743E5" : "repos\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lablablab",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lablablab\/Lablablab.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hackiftekhar\/IQKeyboardManager",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF461CAADB13706454B17F2BB50F488BBAD743E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adamdunford\/lablablab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8139DBE1BC54540FCF02B275885BEE7A2E73904"
+    }
+  ]
+}
