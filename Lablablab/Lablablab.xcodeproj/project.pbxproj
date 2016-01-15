@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3506D56E1C493E05006AC1C7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3506D56D1C493E05006AC1C7 /* Launch Screen.storyboard */; };
 		355C9A1E1C3E94A300B3805A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A1D1C3E94A300B3805A /* LoginViewController.swift */; };
 		355C9A201C3E94C200B3805A /* LabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A1F1C3E94C200B3805A /* LabTableViewController.swift */; };
 		355C9A221C3E94ED00B3805A /* LabDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C9A211C3E94ED00B3805A /* LabDetailViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3506D56D1C493E05006AC1C7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		354D85581C3E782B001AE7D6 /* LablablabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LablablabTests.swift; sourceTree = "<group>"; };
 		354D855A1C3E782B001AE7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355C9A1D1C3E94A300B3805A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				355C9A2A1C3E965E00B3805A /* Core.storyboard */,
+				3506D56D1C493E05006AC1C7 /* Launch Screen.storyboard */,
 				35AF090A1C3E7627005F6A51 /* AppDelegate.swift */,
 				355C9A191C3E934500B3805A /* DataTypes */,
 				35AF090C1C3E7627005F6A51 /* Assets.xcassets */,
@@ -253,6 +256,7 @@
 			files = (
 				35AF09231C3E7627005F6A51 /* Assets.xcassets in Resources */,
 				355C9A2C1C3E965E00B3805A /* Core.storyboard in Resources */,
+				3506D56E1C493E05006AC1C7 /* Launch Screen.storyboard in Resources */,
 				35AF092A1C3E7627005F6A51 /* Lablablab.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

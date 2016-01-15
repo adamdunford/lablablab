@@ -6,6 +6,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var logintext: UILabel!
     
     let gradient: CAGradientLayer = CAGradientLayer()
 
@@ -20,11 +21,13 @@ class LoginViewController: UIViewController {
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
         let attributes = [
-            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSForegroundColorAttributeName: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5),
             NSFontAttributeName : UIFont(name: "Avenir", size: 17.0)! // Note the !
         ]
-        username.attributedPlaceholder = NSAttributedString(string: "Username", attributes:attributes)
+        username.attributedPlaceholder = NSAttributedString(string: "Chalmers CID", attributes:attributes)
         password.attributedPlaceholder = NSAttributedString(string: "Password", attributes:attributes)
+        
+        logintext.font = UIFont(name: "Avenir", size: 14.0)
         
         // Do any additional setup after loading the view.
     }
@@ -35,7 +38,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonPressed(sender: AnyObject) {
-        let alert = UIAlertController(title: "Error", message: "User or password are incorrect", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Error", message: "Chalmers CID or password are incorrect", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
         if username.text != nil && password.text != nil {
