@@ -6,8 +6,6 @@ class LabTableViewController: UITableViewController {
     
     let gradient: CAGradientLayer = CAGradientLayer()
 
-    
-//    var labs : Lab = Lab
     var application : Application = Application.application
     
     
@@ -20,6 +18,12 @@ class LabTableViewController: UITableViewController {
             UIColor(red: 3.0/255, green: 64.0/255,  blue: 120.0/255, alpha: 1).CGColor,
             UIColor(red: 10.0/255, green: 17.0/255, blue: 40.0/255, alpha: 1).CGColor]
         self.view.layer.insertSublayer(gradient, atIndex: 0)
+        
+        UITableViewCell.appearance().textLabel?.textColor = UIColor.whiteColor()
+        UITableViewCell.appearance().textLabel?.font = UIFont(name: "Avenir", size: 17.0)
+        
+        UITableViewCell.appearance().detailTextLabel?.textColor = UIColor.whiteColor()
+        UITableViewCell.appearance().detailTextLabel?.font = UIFont(name: "Avenir", size: 11.0)
         
         if Application.application.currentUser!.isInstructor {
             self.navigationItem.leftBarButtonItem = self.editButtonItem()

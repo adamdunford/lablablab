@@ -1,22 +1,33 @@
 import UIKit
 
 class LabDetailStudentViewController: UIViewController {
+
+    @IBOutlet weak var labName: UILabel!
+    @IBOutlet weak var labDate: UILabel!
+    @IBOutlet weak var labTime: UILabel!
+    @IBOutlet weak var labSupervisor: UILabel!
+    @IBOutlet weak var labLocation: UILabel!
     
-    @IBOutlet var labTitle: UILabel!
-    @IBOutlet var labSupervisor: UILabel!
-    @IBOutlet var labLocation: UILabel!
-    @IBOutlet var labTime: UILabel!
     
-    @IBOutlet var joinButton: UIButton!
-    @IBOutlet var waitingLabel: UILabel!
+    @IBOutlet weak var joinButton: UIButton!
+    @IBOutlet weak var waitingLabel: UILabel!
+    
+
+//    @IBOutlet var labTitle: UILabel!
+//    @IBOutlet var labSupervisor: UILabel!
+//    @IBOutlet var labLocation: UILabel!
+//    @IBOutlet var labTime: UILabel!
+//    
+//    @IBOutlet var joinButton: UIButton!
+//    @IBOutlet var waitingLabel: UILabel!
     //We need to push data from the group members in here with some controller I image
     //Data is in labDetails.groupForStudent(Application.application.currentUser).members
     //For each member I assume we need to show member.name and member.lastname
     
-    @IBOutlet var groupNumberLabel: UILabel!
+    @IBOutlet weak var groupNumberLabel: UILabel!
+    @IBOutlet weak var groupMembersLabel: UILabel!
     
-    @IBOutlet var groupMembersLabel: UILabel!
-    @IBOutlet var askQuestionButton: UIButton!
+    @IBOutlet weak var askQuestionButton: UIButton!
     
     let gradient: CAGradientLayer = CAGradientLayer()
     
@@ -38,6 +49,15 @@ class LabDetailStudentViewController: UIViewController {
         //        gradient.locations = [0.0, 0.5, 1.0]  // that's if we want to change where they appear
         self.view.layer.insertSublayer(gradient, atIndex: 0)
         
+        labName.font = UIFont(name: "Avenir", size: 32.0)
+        labDate.font = UIFont(name: "Avenir", size: 15.0)
+        labTime.font = UIFont(name: "Avenir", size: 15.0)
+        waitingLabel.font = UIFont(name: "Avenir", size: 24.0)
+        
+        waitingLabel.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5)
+
+        labName.numberOfLines = 0
+
         // Do any additional setup after loading the view.
         self.configureView()
         configureButtons()
@@ -71,16 +91,21 @@ class LabDetailStudentViewController: UIViewController {
     
     func configureView() {
         if let detail = self.labDetail {
-            if let title = self.labTitle {
+            if let title = self.labName {
                 title.text = detail.name
             }
             
             let userCalendar = NSCalendar.currentCalendar()
             
+            if let date = self.labDate {
+                let formatterDay = NSDateFormatter()
+                formatterDay.dateFormat = "EEEE, d MMM yyyy"
+                date.text = "\(formatterDay.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!))"
+            }
             if let time = self.labTime {
-                let formatter = NSDateFormatter()
-                formatter.dateFormat = "y-MM-dd hh:mm"
-                time.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!)) - \(formatter.stringFromDate(userCalendar.dateFromComponents(detail.endTime)!))"
+                let formatterTime = NSDateFormatter()
+                formatterTime.dateFormat = "H:mm"
+                time.text = "\(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.startTime)!)) - \(formatterTime.stringFromDate(userCalendar.dateFromComponents(detail.endTime)!))"
             }
             
             if let labSupervisor = self.labSupervisor {

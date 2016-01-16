@@ -7,14 +7,13 @@ class LabDetailViewController: UIViewController {
     @IBOutlet weak var labTime: UILabel!
     @IBOutlet weak var labSupervisor: UILabel!
     @IBOutlet weak var labLocation: UILabel!
-    
     @IBOutlet weak var studentCount: UILabel!
     
     @IBOutlet var createGroupsButton: UIButton!
-    
-    @IBOutlet var viewQuestionQueueButton: UIButton!
-    
+
     @IBOutlet var queueCountLabel: UILabel!
+    @IBOutlet var viewQuestionQueueButton: UIButton!
+
     let gradient: CAGradientLayer = CAGradientLayer()
     
     
@@ -49,16 +48,20 @@ class LabDetailViewController: UIViewController {
             if let labLocation = self.labLocation {
                 labLocation.text = detail.location.name
             }
+            
+            var pluralize = "s"
+            
             if let studentCount = self.studentCount {
-                studentCount.text = "\(detail.students.count) in \(detail.groups.count) groups"
-            }
-            if let studentCount = self.studentCount {
-                studentCount.text = "\(detail.students.count) in \(detail.groups.count) groups"
+                if detail.groups.count == 1 { pluralize = "" }
+                studentCount.text = "\(detail.students.count) in \(detail.groups.count) group\(pluralize)"
             }
             
             if detail.groups.count > 0 {
                 if let queueCount = queueCountLabel {
-                    queueCount.text = "\(detail.questionQueue.groupsQueue.count) groups have questions"                }
+                    if detail.questionQueue.groupsQueue.count == 1 { pluralize = " needs help" }
+                    else { pluralize = "s need help" }
+                    queueCount.text = "\(detail.questionQueue.groupsQueue.count) group\(pluralize)"
+                }
                 
             } else {
                 if let queueCount = queueCountLabel {
@@ -101,8 +104,13 @@ class LabDetailViewController: UIViewController {
         labName.font = UIFont(name: "Avenir", size: 32.0)
         labDate.font = UIFont(name: "Avenir", size: 15.0)
         labTime.font = UIFont(name: "Avenir", size: 15.0)
+        queueCountLabel.font = UIFont(name: "Avenir", size: 24.0)
 
-        labName.numberOfLines = 0 
+        labName.numberOfLines = 0
+        
+        // this is temporary
+        createGroupsButton.hidden = true
+
         
         // Do any additional setup after loading the view.
         self.configureView()
@@ -122,7 +130,7 @@ class LabDetailViewController: UIViewController {
         labDetail?.generateGroups()
         createGroupsButton.hidden = true
         queueCountLabel.hidden = false
-        queueCountLabel.text = "\(labDetail!.questionQueue.groupsQueue.count) groups have questions"
+        queueCountLabel.text = "\(labDetail!.questionQueue.groupsQueue.count) groups need help"
         viewQuestionQueueButton.hidden = false
         studentCount.text = "\(labDetail!.students.count) in \(labDetail!.groups.count) groups"
     }
