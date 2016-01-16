@@ -109,7 +109,8 @@ class LabDetailViewController: UIViewController {
         labName.numberOfLines = 0
         
         // this is temporary
-        createGroupsButton.hidden = true
+        queueCountLabel.hidden = true
+        viewQuestionQueueButton.hidden = true
 
         
         // Do any additional setup after loading the view.
@@ -130,9 +131,16 @@ class LabDetailViewController: UIViewController {
         labDetail?.generateGroups()
         createGroupsButton.hidden = true
         queueCountLabel.hidden = false
-        queueCountLabel.text = "\(labDetail!.questionQueue.groupsQueue.count) groups need help"
+        
+        var pluralize = "s"
+        
+        if labDetail!.groups.count == 1 { pluralize = "" }
+        studentCount.text = "\(labDetail!.students.count) in \(labDetail!.groups.count) group\(pluralize)"
+        
+        if labDetail!.questionQueue.groupsQueue.count == 1 { pluralize = " need help" }
+        else { pluralize = "s need help" }
+        queueCountLabel.text = "\(labDetail!.questionQueue.groupsQueue.count) group\(pluralize)"
         viewQuestionQueueButton.hidden = false
-        studentCount.text = "\(labDetail!.students.count) in \(labDetail!.groups.count) groups"
     }
 
     @IBAction func viewQuestionQueuePressed(sender: AnyObject) {
