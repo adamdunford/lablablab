@@ -24,7 +24,9 @@ class LabDetailStudentViewController: UIViewController {
     //Data is in labDetails.groupForStudent(Application.application.currentUser).members
     //For each member I assume we need to show member.name and member.lastname
     
+    @IBOutlet weak var groupNumberDesc: UILabel!
     @IBOutlet weak var groupNumberLabel: UILabel!
+    @IBOutlet weak var groupMembersDesc: UILabel!
     @IBOutlet weak var groupMembersLabel: UILabel!
     
     @IBOutlet weak var askQuestionButton: UIButton!
@@ -70,6 +72,8 @@ class LabDetailStudentViewController: UIViewController {
     
     func configureButtons() {
         if labDetail?.groups.count > 0 {
+            groupNumberDesc.hidden = false
+            groupMembersDesc.hidden = false
             joinButton.hidden = true
             waitingLabel.hidden = true
             groupNumberLabel.text = "Group \(labDetail!.groupForStudent(Application.application.currentUser!)!.number)"
@@ -78,7 +82,9 @@ class LabDetailStudentViewController: UIViewController {
                 askQuestionButton.hidden = true
             }
         } else {
+            groupNumberDesc.hidden = true
             groupNumberLabel.hidden = true
+            groupMembersDesc.hidden = true
             groupMembersLabel.hidden = true
             askQuestionButton.hidden = true
             if labDetail!.students.contains({$0.name == Application.application.currentUser!.name && $0.lastName == Application.application.currentUser?.lastName}) {
