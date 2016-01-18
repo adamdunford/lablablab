@@ -64,7 +64,7 @@ class LabTableViewController: UITableViewController {
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
-        }else if segue.identifier == "addLab" {
+        } else if segue.identifier == "addLab" {
             //let controller = segue.destinationViewController as! LabAddViewController
 
             // WHAT'S MISSING HERE??
@@ -94,7 +94,7 @@ class LabTableViewController: UITableViewController {
 
         let userCalendar = NSCalendar.currentCalendar()
         
-        cell.detailTextLabel!.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!)) - \(lab.location.name)"
+        cell.detailTextLabel!.text = "\(formatter.stringFromDate(userCalendar.dateFromComponents(lab.startTime)!)) - \(lab.location.name.uppercaseString)"
 
         cell.textLabel!.textColor = UIColor.whiteColor()
         cell.textLabel!.font = UIFont(name: "Avenir", size: 17.0)

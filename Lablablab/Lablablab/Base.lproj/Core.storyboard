@@ -209,6 +209,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Labs" id="W3N-rH-hTX">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="AmO-id-gxa">
+                            <connections>
+                                <segue destination="FSa-Nh-MKh" kind="push" id="OvR-1J-WCg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gPb-OJ-ZRE">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -286,14 +291,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Supervisor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-XI-kwA">
-                                <rect key="frame" x="47" y="232" width="85" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supervisor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-XI-kwA">
+                                <rect key="frame" x="47" y="230" width="85" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-Yh-Exx">
-                                <rect key="frame" x="62" y="269" width="70" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-Yh-Exx">
+                                <rect key="frame" x="62" y="267" width="70" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -307,8 +312,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Students:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-K0-QvE">
-                                <rect key="frame" x="60" y="306" width="72" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hd-K0-QvE">
+                                <rect key="frame" x="60" y="304" width="72" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -360,16 +365,16 @@
                             <constraint firstItem="Uje-ZE-seV" firstAttribute="top" secondItem="q2l-D4-x8D" secondAttribute="bottom" id="WWd-cZ-aVN"/>
                             <constraint firstItem="Y8t-Yh-Exx" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="WY9-hK-3PR"/>
                             <constraint firstItem="7Hd-K0-QvE" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="XhG-4v-pQx"/>
-                            <constraint firstItem="Y8t-Yh-Exx" firstAttribute="top" secondItem="72c-WO-7cc" secondAttribute="top" id="Z7p-mL-JEu"/>
+                            <constraint firstItem="Y8t-Yh-Exx" firstAttribute="top" secondItem="72c-WO-7cc" secondAttribute="top" constant="-2" id="Z7p-mL-JEu"/>
                             <constraint firstItem="3xr-1X-5CV" firstAttribute="top" secondItem="Uje-ZE-seV" secondAttribute="bottom" constant="16" id="aYx-TR-0f0"/>
                             <constraint firstItem="Uje-ZE-seV" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="c85-Nq-Flo"/>
                             <constraint firstItem="npK-10-1Q8" firstAttribute="top" secondItem="mCO-OA-PHH" secondAttribute="bottom" constant="20" id="f6m-tK-AaC"/>
                             <constraint firstItem="KUs-XS-t1r" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="f91-uT-YpT"/>
                             <constraint firstItem="wwu-IA-J9K" firstAttribute="top" secondItem="72c-WO-7cc" secondAttribute="bottom" constant="16" id="fCO-sd-sxR"/>
                             <constraint firstItem="4SK-XI-kwA" firstAttribute="trailing" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-28" id="igq-Dv-YUt"/>
-                            <constraint firstItem="4SK-XI-kwA" firstAttribute="top" secondItem="3xr-1X-5CV" secondAttribute="top" id="lTZ-UT-zLa"/>
+                            <constraint firstItem="4SK-XI-kwA" firstAttribute="top" secondItem="3xr-1X-5CV" secondAttribute="top" constant="-2" id="lTZ-UT-zLa"/>
                             <constraint firstItem="npK-10-1Q8" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="p3k-98-piw"/>
-                            <constraint firstItem="7Hd-K0-QvE" firstAttribute="top" secondItem="wwu-IA-J9K" secondAttribute="top" id="u3i-f9-Red"/>
+                            <constraint firstItem="7Hd-K0-QvE" firstAttribute="top" secondItem="wwu-IA-J9K" secondAttribute="top" constant="-2" id="u3i-f9-Red"/>
                             <constraint firstItem="Kic-j8-Ux6" firstAttribute="centerX" secondItem="aFX-kI-J7o" secondAttribute="centerX" id="yBQ-Mx-4fi"/>
                             <constraint firstItem="wwu-IA-J9K" firstAttribute="leading" secondItem="aFX-kI-J7o" secondAttribute="centerX" constant="-20" id="yOR-ix-dBF"/>
                         </constraints>
@@ -699,7 +704,7 @@
                             <tableViewSection id="Lx4-jl-njk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labNameCell" rowHeight="90" id="osE-1p-p84">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="90"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="osE-1p-p84" id="noi-24-LCK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
@@ -719,7 +724,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="startCell" textLabel="bLd-0M-Coh" detailTextLabel="wDk-yk-7Ub" style="IBUITableViewCellStyleValue1" id="h4Q-73-Yx6">
-                                        <rect key="frame" x="0.0" y="154" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="90" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h4Q-73-Yx6" id="Ldm-li-TO9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -746,7 +751,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="startPickerCell" id="vvH-Eq-xwL">
-                                        <rect key="frame" x="0.0" y="198" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="134" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vvH-Eq-xwL" id="zmf-uX-gsv">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -764,7 +769,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="endCell" textLabel="1Ni-ly-Qp7" detailTextLabel="Y36-6w-XJy" style="IBUITableViewCellStyleValue1" id="fmt-5C-an7">
-                                        <rect key="frame" x="0.0" y="242" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="178" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmt-5C-an7" id="Ovd-bD-i8C">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -790,7 +795,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="endPickerCell" id="aCw-ji-rQw">
-                                        <rect key="frame" x="0.0" y="286" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="222" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aCw-ji-rQw" id="Tz6-cs-wQI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -808,7 +813,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" textLabel="6aT-vn-UV3" detailTextLabel="yDb-3K-UMY" style="IBUITableViewCellStyleValue1" id="GC9-e2-p0V">
-                                        <rect key="frame" x="0.0" y="330" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="266" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GC9-e2-p0V" id="7wV-Jt-9KT">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -834,7 +839,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationPickerCell" id="a52-6c-2eW">
-                                        <rect key="frame" x="0.0" y="374" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="310" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a52-6c-2eW" id="zzZ-ja-Fc5">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -849,7 +854,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="autoGroupsSwitchCell" textLabel="gEw-Rq-40k" style="IBUITableViewCellStyleDefault" id="0ZU-Zh-sL3">
-                                        <rect key="frame" x="0.0" y="418" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="354" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ZU-Zh-sL3" id="MGZ-XG-5PR">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -871,7 +876,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupSizePickerCell" textLabel="LsU-me-kT4" style="IBUITableViewCellStyleDefault" id="PTS-tp-caa">
-                                        <rect key="frame" x="0.0" y="462" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="398" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PTS-tp-caa" id="F2c-tL-NVd">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -948,23 +953,6 @@
             </objects>
             <point key="canvasLocation" x="-2158" y="407"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="YjR-aD-vap">
-            <objects>
-                <viewController id="Lkd-gt-Rtk" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8vY-OV-zSv"/>
-                        <viewControllerLayoutGuide type="bottom" id="F02-NB-fXc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d0Y-t7-8Xv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FQU-Ap-C3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Lab Details - Student-->
         <scene sceneID="pBR-xZ-YfG">
             <objects>
@@ -1012,13 +1000,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supervisor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJF-ls-twi">
-                                <rect key="frame" x="47" y="232" width="85" height="24"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDP-a0-BR7">
-                                <rect key="frame" x="62" y="269" width="70" height="24"/>
+                                <rect key="frame" x="47" y="230" width="85" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1033,7 +1015,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkF-Jc-IvN">
-                                <rect key="frame" x="78" y="306" width="54" height="24"/>
+                                <rect key="frame" x="78" y="304" width="54" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1048,7 +1030,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-Zo-hWo">
-                                <rect key="frame" x="55" y="343" width="77" height="24"/>
+                                <rect key="frame" x="55" y="341" width="77" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1097,6 +1079,12 @@
                                     <action selector="joinedLab:" destination="W80-L7-LgO" eventType="touchUpInside" id="rmH-Pj-awx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDP-a0-BR7">
+                                <rect key="frame" x="62" y="267" width="70" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.01176470588" green="0.25098039220000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1108,7 +1096,7 @@
                             <constraint firstItem="Oqa-TK-JWi" firstAttribute="top" secondItem="cpc-on-Xca" secondAttribute="bottom" constant="16" id="CeD-fa-4Uv"/>
                             <constraint firstItem="1vG-DS-iQw" firstAttribute="centerX" secondItem="nYV-Kb-j8K" secondAttribute="centerX" id="H0z-6N-cPc"/>
                             <constraint firstItem="IMG-h6-qGp" firstAttribute="width" secondItem="nYV-Kb-j8K" secondAttribute="width" constant="-30" id="H5e-hd-acj"/>
-                            <constraint firstItem="rDP-a0-BR7" firstAttribute="top" secondItem="Oqa-TK-JWi" secondAttribute="top" id="Ivt-41-9C1"/>
+                            <constraint firstItem="rDP-a0-BR7" firstAttribute="top" secondItem="Oqa-TK-JWi" secondAttribute="top" constant="-2" id="Ivt-41-9C1"/>
                             <constraint firstItem="cpc-on-Xca" firstAttribute="leading" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-20" id="Mba-SZ-Tqa"/>
                             <constraint firstItem="qh4-Zo-hWo" firstAttribute="trailing" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-28" id="N27-UF-wHs"/>
                             <constraint firstItem="A6x-uh-uxh" firstAttribute="leading" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-20" id="Ndf-dR-jj8"/>
@@ -1116,13 +1104,13 @@
                             <constraint firstItem="Oqa-TK-JWi" firstAttribute="leading" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-20" id="QWS-zS-oIy"/>
                             <constraint firstItem="vaX-EQ-14q" firstAttribute="top" secondItem="PDo-rR-Tno" secondAttribute="bottom" id="SQ9-SU-hIr"/>
                             <constraint firstItem="PDo-rR-Tno" firstAttribute="centerX" secondItem="nYV-Kb-j8K" secondAttribute="centerX" id="cHH-4z-Zkc"/>
-                            <constraint firstItem="NkF-Jc-IvN" firstAttribute="top" secondItem="WVn-cl-avi" secondAttribute="top" id="fge-sn-4Qp"/>
-                            <constraint firstItem="OJF-ls-twi" firstAttribute="top" secondItem="cpc-on-Xca" secondAttribute="top" id="hpG-o7-U2d"/>
+                            <constraint firstItem="NkF-Jc-IvN" firstAttribute="top" secondItem="WVn-cl-avi" secondAttribute="top" constant="-2" id="fge-sn-4Qp"/>
+                            <constraint firstItem="OJF-ls-twi" firstAttribute="top" secondItem="cpc-on-Xca" secondAttribute="top" constant="-2" id="hpG-o7-U2d"/>
                             <constraint firstItem="1vG-DS-iQw" firstAttribute="top" secondItem="WVn-cl-avi" secondAttribute="bottom" constant="100" id="knG-CP-oLd"/>
                             <constraint firstItem="CKI-2T-hzL" firstAttribute="centerX" secondItem="nYV-Kb-j8K" secondAttribute="centerX" id="luk-Zh-aQ7"/>
                             <constraint firstItem="CKI-2T-hzL" firstAttribute="top" secondItem="WVn-cl-avi" secondAttribute="bottom" constant="160" id="neV-12-e10"/>
                             <constraint firstItem="NkF-Jc-IvN" firstAttribute="trailing" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-28" id="nnx-87-WKx"/>
-                            <constraint firstItem="qh4-Zo-hWo" firstAttribute="top" secondItem="A6x-uh-uxh" secondAttribute="top" id="qMT-xM-qen"/>
+                            <constraint firstItem="qh4-Zo-hWo" firstAttribute="top" secondItem="A6x-uh-uxh" secondAttribute="top" constant="-2" id="qMT-xM-qen"/>
                             <constraint firstItem="WVn-cl-avi" firstAttribute="leading" secondItem="nYV-Kb-j8K" secondAttribute="centerX" constant="-20" id="r15-FU-O0H"/>
                             <constraint firstItem="PDo-rR-Tno" firstAttribute="top" secondItem="IMG-h6-qGp" secondAttribute="bottom" constant="-4" id="wRw-D0-Ty9"/>
                             <constraint firstItem="WVn-cl-avi" firstAttribute="centerY" secondItem="nYV-Kb-j8K" secondAttribute="centerY" constant="32" id="wUq-dh-PD7"/>
@@ -1166,5 +1154,8 @@
         <image name="chalmers-crest" width="421" height="395"/>
         <image name="lablablab-title" width="640" height="75"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OvR-1J-WCg"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

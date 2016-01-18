@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Groupwork made better." textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="20" y="235" width="280" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groupwork made better." textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="16" y="235" width="288" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="Wb9-Cd-7JA"/>
                                 </constraints>
@@ -28,8 +28,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="connecting to server..." textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="asf-YP-Agd">
-                                <rect key="frame" x="20" y="277" width="280" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connecting to server..." textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="asf-YP-Agd">
+                                <rect key="frame" x="76" y="277" width="168" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="HS6-IZ-0VA"/>
                                 </constraints>
@@ -49,8 +49,8 @@
                                     <constraint firstAttribute="height" constant="50" id="os9-fv-ft0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright © 2016 CIU196 Mobile Computing. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="20" y="527" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2016 CIU196 Mobile Computing. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="16" y="527" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Xlb-Qh-CZ1"/>
                                 </constraints>
@@ -62,6 +62,7 @@
                         <color key="backgroundColor" red="0.01176470588" green="0.25098039220000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5uf-9E-TB1" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="0kI-wC-YJR" userLabel="lablablab-title.centerX = Groupwork made better..centerX - 70"/>
+                            <constraint firstItem="asf-YP-Agd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="12L-rx-UeP"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" symbolic="YES" id="1BW-BO-okm"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="GJd-Yh-RWb" secondAttribute="leading" id="1R2-A6-0ec"/>
                             <constraint firstItem="4km-7g-NsU" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottomMargin" constant="86" id="6V7-2H-as4"/>
@@ -69,6 +70,7 @@
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="5uf-9E-TB1" secondAttribute="bottom" id="Hle-YI-WHZ"/>
                             <constraint firstItem="4km-7g-NsU" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="Q6m-6q-J1k"/>
                             <constraint firstItem="5uf-9E-TB1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-74" id="QHM-e5-nC7"/>
+                            <constraint firstItem="asf-YP-Agd" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="-1" id="cSD-74-gLZ"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="oNx-lL-ff1"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="trailing" secondItem="GJd-Yh-RWb" secondAttribute="trailing" id="oOQ-if-cYN"/>
                         </constraints>
