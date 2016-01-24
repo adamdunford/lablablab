@@ -45,7 +45,6 @@
 		35AF092D1C3E7627005F6A51 /* QuestionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091A1C3E7627005F6A51 /* QuestionQueue.swift */; };
 		35AF092E1C3E7627005F6A51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091B1C3E7627005F6A51 /* User.swift */; };
 		35AF092F1C3E7627005F6A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF091C1C3E7627005F6A51 /* ViewController.swift */; };
-		35E1135C1C4CC868002F0EF7 /* xTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E1135B1C4CC868002F0EF7 /* xTableViewController.swift */; };
 		F05F21711C19D58300359297 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F216F1C19D58300359297 /* Bolts.framework */; };
 		F05F21721C19D58300359297 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F21701C19D58300359297 /* Parse.framework */; };
 		F0A30F3C1C1B1C970018AF33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */; };
@@ -104,7 +103,6 @@
 		35AF091C1C3E7627005F6A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AF091D1C3E7627005F6A51 /* Lablablab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lablablab-Bridging-Header.h"; sourceTree = "<group>"; };
 		35DE9DA11C107B0F0022DDAB /* Lablablab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lablablab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E1135B1C4CC868002F0EF7 /* xTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xTableViewController.swift; sourceTree = "<group>"; };
 		F05F216F1C19D58300359297 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F05F21701C19D58300359297 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F0A30F3B1C1B1C970018AF33 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -267,7 +265,6 @@
 				355C9A231C3E958E00B3805A /* LabAddViewController.swift */,
 				355C9A251C3E959B00B3805A /* LabEditViewController.swift */,
 				355C9A271C3E95F500B3805A /* HelpQueueViewController.swift */,
-				35E1135B1C4CC868002F0EF7 /* xTableViewController.swift */,
 				355C9A2D1C3E989700B3805A /* StyleExtensions.swift */,
 			);
 			path = Lablablab;
@@ -384,7 +381,6 @@
 				3506D5B81C499BBB006AC1C7 /* IQTitleBarButtonItem.swift in Sources */,
 				3506D5B91C499BBB006AC1C7 /* IQToolbar.swift in Sources */,
 				355C9A241C3E958E00B3805A /* LabAddViewController.swift in Sources */,
-				35E1135C1C4CC868002F0EF7 /* xTableViewController.swift in Sources */,
 				355C9A221C3E94ED00B3805A /* LabDetailViewController.swift in Sources */,
 				3506D5B31C499BBB006AC1C7 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				3506D5BA1C499BBB006AC1C7 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
