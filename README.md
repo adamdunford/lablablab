@@ -1,5 +1,5 @@
 # lablablab
-Lablablab is an iOS app developed for CIU196: Mobile Computing by Alma Castillo, Adam Dunford & Fran Perković
+Lablablab was an iOS app developed for CIU196: Mobile Computing (Chalmers Univ, Autumn 2015) by Alma Castillo, Adam Dunford & Fran Perković. As the class is now over, here's the code we developed.
 
 ## Live vs Test Data
 If you want to view a prepopulated scenario, with groups already loaded, comment out this line in your **AppDelegate.swift** file 
